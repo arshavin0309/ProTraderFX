@@ -1,0 +1,95 @@
+:root {
+    --white: #fff;
+    --grey: #F3F3F3;
+    --grey-dark: #E1DAF5;
+    --black: #292929;
+    --green: linear-gradient(180deg, #72E175 0%, #83E09E 61.31%);
+    --red: linear-gradient(183.32deg, #E26853 3.33%, #FB8B6D 54.97%);
+    --pink: linear-gradient(180deg, #E5ADFF 0%, #FCB8E1 61.78%);
+    --blue: linear-gradient(180deg, #75D1FF 0%, #3BAAE1 100%);
+    --transition: .2s ease-in-out all
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 2000px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    color: var(--white);
+    background: #0065B3;
+}
+
+.btn--white {
+    color: var(--black);
+    background: var(--white);
+}
+
+.btn--black {
+    color: var(--white);
+    background: var(--black);
+}
+
+.btn-arrow-white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--black);
+    cursor: pointer;
+}
+
+.btn-arrow-white::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url(../img/btn-arrow-white.svg) center / contain no-repeat;
+    transition: var(--transition);
+}
+
+.btn-arrow-white:hover::before {
+    transform: rotate(45deg);
+}
+
+.btn-arrow-black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--white);
+    cursor: pointer;
+}
+
+.btn-arrow-black::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url(../img/btn-arrow-black.svg) center / contain no-repeat;
+    transition: var(--transition);
+}
+
+.btn-arrow-black:hover::before {
+    transform: rotate(45deg);
+}
