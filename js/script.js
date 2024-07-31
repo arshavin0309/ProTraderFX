@@ -52,5 +52,40 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollbar: {
             el: '.swiper-scrollbar',
         },
+
+        virtual: {
+            enabled: true,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            600: {
+                slidesPerView: 1.5,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            900: {
+                slidesPerView: 2.5,
+                spaceBetween: 20
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            1024: {
+                slidesPerView: 3.5,
+                spaceBetween: 30
+            },
+            1500: {
+                slidesPerView: 4.5,
+                spaceBetween: 30
+            },
+        }
     });
 });

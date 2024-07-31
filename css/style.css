@@ -365,11 +365,41 @@ header .discription {
     display: none;
 }
 
+.cards .wide-container {
+    padding-top: 20px;
+}
+
 .cards__item {
     padding: 25px;
     border-radius: 10px;
+    flex: 0 0 auto;
+}
+
+.cards__box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #29292945;
+}
+
+.cards__item img {
+    margin-top: 20px;
 }
 
 .cards__item--green {
     background: var(--green);
+}
+
+.cards__item--red {
+    background: var(--red);
+}
+
+.cards__item--pink {
+    background: var(--pink);
+}
+
+.cards__item--blue {
+    background: var(--blue);
 }
