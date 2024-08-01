@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
         loop: true,
-        
+
         pagination: {
             el: '.swiper-pagination',
         },
@@ -86,4 +86,20 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         }
     });
+
+    // Табы
+    let assetsBtn = document.querySelectorAll('.assets__btn');
+    let assetsBox = document.querySelectorAll('.assets__box');
+
+    for (let i = 0; i < assetsBtn.length; i++) {
+        assetsBtn[i].addEventListener('click', () => {
+            for (let n = 0; n < assetsBtn.length; n++) {
+                assetsBtn[n].classList.remove('active');
+                assetsBox[n].classList.remove('active');
+            };
+
+            assetsBtn[i].classList.add('active');
+            assetsBox[i].classList.add('active');
+        });
+    };
 });
