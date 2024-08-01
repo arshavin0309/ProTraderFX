@@ -34,28 +34,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
-        // Optional parameters
         loop: true,
-
-        // If we need pagination
+        
         pagination: {
             el: '.swiper-pagination',
         },
 
-        // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
 
-        // And if we need scrollbar
         scrollbar: {
             el: '.swiper-scrollbar',
         },
 
-        // virtual: {
-        //     enabled: true,
-        // },
+        autoplay: {
+            delay: 1750,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
 
         breakpoints: {
             320: {
