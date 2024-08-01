@@ -143,7 +143,7 @@ header {
     width: 100%;
 }
 
-header .container {
+.header__box {
     display: flex;
     height: 60px;
     align-items: center;
@@ -402,4 +402,146 @@ header .discription {
 
 .cards__item--blue {
     background: var(--blue);
+}
+
+.right-choice {
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+
+.right-choice h2 {
+    margin-bottom: 65px;
+}
+
+.right-choice__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+}
+
+.right-choice__item {
+    position: relative;
+    padding: 30px 15px;
+    border-radius: 10px;
+    background: var(--grey);
+    transition: var(--transition);
+    border: 2px solid var(--grey);
+    cursor: pointer;
+}
+
+.right-choice__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: -23px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    transform: rotate(45deg);
+    transition: var(--transition);
+}
+
+.right-choice__item:nth-child(1):hover {
+    border: 2px solid #72E175;
+}
+
+.right-choice__item:nth-child(1):hover::before {
+    border-right: 2px solid #72E175;
+    border-bottom: 2px solid #72E175;
+}
+
+.right-choice__item:nth-child(2):hover {
+    border: 2px solid #E26853;
+}
+
+.right-choice__item:nth-child(3):hover {
+    border: 2px solid #75D1FF;
+}
+
+.right-choice__item:nth-child(4):hover {
+    border: 2px solid #75D1FF;
+}
+
+.right-choice__item:nth-child(5):hover {
+    border: 2px solid #72E175;
+}
+
+.right-choice__item:nth-child(6):hover {
+    border: 2px solid #E26853;
+}
+
+.right-choice__item:nth-child(7):hover {
+    border: 2px solid #E5ADFF;
+}
+
+.right-choice__item:nth-child(1)::before {
+    background: url(../img/right-choice-item-1.svg) var(--grey) center / 18px no-repeat;
+}
+
+.right-choice__item:nth-child(2)::before {
+    background: url(../img/right-choice-item-2.svg) var(--grey) center / 18px no-repeat;
+}
+
+.right-choice__item:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+.right-choice__item:nth-child(3) h3 {
+    margin-bottom: 170px;
+}
+
+.right-choice__item:nth-child(3)::before {
+    background: url(../img/right-choice-item-3.svg) var(--grey) center / 18px no-repeat;
+}
+
+.right-choice__item:nth-child(3)::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: url(../img/Access-to-all-markets.png) center bottom / contain no-repeat;
+}
+
+.right-choice__item:nth-child(4) {
+    grid-row: 2/4;
+}
+
+.right-choice__item:nth-child(4) h3 {
+    margin-bottom: 170px;
+}
+
+.right-choice__item:nth-child(4)::before {
+    background: url(../img/right-choice-item-4.svg) var(--grey) center / 18px no-repeat;
+}
+
+.right-choice__item:nth-child(4)::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 190px;
+    background: url(../img/Fast-deposit-and-withdrawal-of-funds.png) center bottom / contain no-repeat;
+}
+
+.right-choice__item:nth-child(5)::before {
+    background: url(../img/right-choice-item-5.svg) var(--grey) center / 18px no-repeat;
+}
+
+.right-choice__item:nth-child(6)::before {
+    background: url(../img/right-choice-item-6.svg) var(--grey) center / 18px no-repeat;
+}
+
+.right-choice__item:nth-child(7)::before {
+    background: url(../img/right-choice-item-7.svg) var(--grey) center / 18px no-repeat;
 }

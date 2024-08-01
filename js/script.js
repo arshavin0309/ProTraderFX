@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
             el: '.swiper-scrollbar',
         },
 
-        virtual: {
-            enabled: true,
-        },
+        // virtual: {
+        //     enabled: true,
+        // },
 
         breakpoints: {
             320: {
