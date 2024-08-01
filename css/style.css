@@ -861,8 +861,9 @@ header .discription {
 }
 
 .assets__box {
+    position: relative;
     display: none;
-    padding: 35px 25px;
+    padding: 100px 25px 35px;
     background: var(--grey);
     border-radius: 10px;
 }
@@ -914,7 +915,81 @@ header .discription {
     list-style: none;
 }
 
+.assets__list--1::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(../img/assets-box-human-1.png) right center / contain no-repeat;
+    width: calc(100% - 70px);
+    height: calc((100% - 20px - 120px));
+    top: 20px;
+    right: 70px;
+    bottom: 120px;
+}
+
+.assets__list--2::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(../img/assets-box-human-2.png) right center / contain no-repeat;
+    width: calc(100% - 45px);
+    height: calc(100% - 20px - 145px);
+    top: 20px;
+    right: 45px;
+    bottom: 145px;
+}
+
+.assets__list--3::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: calc(100% - 65px);
+    height: calc(100% - 30px - 145px);
+    top: 30px;
+    bottom: 145px;
+    right: 65px;
+    background: url(../img/assets-box-human-3.png) right center / contain no-repeat;
+}
+
+.assets__list--4::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: calc(100% - 90px);
+    height: calc(100% - 5px - 160px);
+    top: 5px;
+    bottom: 160px;
+    right: 90px;
+    background: url(../img/assets-box-human-4.png) right center / contain no-repeat;
+}
+
+.assets__list--5::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: calc(100% - 105px);
+    height: calc(100% - 15px - 105px);
+    top: 15px;
+    bottom: 105px;
+    right: 105px;
+    background: url(../img/assets-box-human-5.png) right center / contain no-repeat;
+}
+
+.assets__list--6::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: calc(100% - 100px);
+    height: calc(100% - 40px - 165px);
+    top: 40px;
+    bottom: 165px;
+    right: 100px;
+    background: url(../img/assets-box-human-6.png) right center / contain no-repeat;
+}
+
 .assets__item {
+    position: relative;
+    height: 140px;
     padding: 25px;
     border-radius: 10px;
 }
@@ -933,4 +1008,171 @@ header .discription {
 
 .assets__list--blue .assets__item {
     background: var(--blue);
+}
+
+.assets__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--black-with-opacity);
+}
+
+.assets__name {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.assets__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.assets__name--EURUSD::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/EURUSD.svg) center / contain no-repeat;
+}
+
+.assets__name--GBPUSD::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/GBPUSD.svg) center / contain no-repeat;
+}
+
+.assets__name--USDJPY::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/USDJPY.svg) center / contain no-repeat;
+}
+
+.assets__name--NVIDIA::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/NVIDIA.svg) center / contain no-repeat;
+}
+
+.assets__name--Alphabet-Inc::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/Alphabet-Inc.svg) center / contain no-repeat;
+}
+
+.assets__name--VALE-S-A::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/VALE-S-A.svg) center / contain no-repeat;
+}
+
+.assets__name--bitcoin::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/bitcoin.svg) center / contain no-repeat;
+}
+
+.assets__name--Ethereum::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/Ethereum.svg) center / contain no-repeat;
+}
+
+.assets__name--Market-Cap-SHIB::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/Market-Cap-SHIB.svg) center / contain no-repeat;
+}
+
+.assets__name--Silver::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/Silver.svg) center / contain no-repeat;
+}
+
+.assets__name--gold::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/gold.svg) center / contain no-repeat;
+}
+
+.assets__name--Palladium::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/Palladium.svg) center / contain no-repeat;
+}
+
+.assets__name--Moscow-Exchange::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/Moscow-Exchange.svg) center / contain no-repeat;
+}
+
+.assets__name--Nasdaq-100::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/Nasdaq-100.svg) center / contain no-repeat;
+}
+
+.assets__name--DJI::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/DJI.svg) center / contain no-repeat;
+}
+
+.assets__name--WTI-Oil::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/WTI-Oil.svg) center / contain no-repeat;
+}
+
+.assets__name--Wheat::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/Wheat.svg) center / contain no-repeat;
+}
+
+.assets__name--Cocoa::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/Cocoa.svg) center / contain no-repeat;
 }
