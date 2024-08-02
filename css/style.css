@@ -228,8 +228,8 @@ header .sub-menu .menu-item a {
     display: block;
     width: 100%;
     padding: 0;
-    padding-left: 20px;
-    font-size: 14px;
+    padding-left: 30px;
+    font-size: 18px;
     line-height: 115%;
     background: none;
     color: var(--black);
@@ -274,74 +274,74 @@ header .sub-menu .menu-item:hover a {
 header .discription {
     display: block;
     margin-top: 5px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 300;
     color: #9C9C9C;
     line-height: 120%;
 }
 
 .header__about {
-    background: url(../img/header-about.svg) left top / 16px no-repeat;
+    background: url(../img/header-about.svg) left top / 24px no-repeat;
 }
 
 .header__why {
-    background: url(../img/header-why.svg) left top / 16px no-repeat;
+    background: url(../img/header-why.svg) left top / 24px no-repeat;
 }
 
 .header__doc {
-    background: url(../img/header-doc.svg) left top / 16px no-repeat;
+    background: url(../img/header-doc.svg) left top / 24px no-repeat;
 }
 
 .header__contact {
-    background: url(../img/header-contact.svg) left top / 16px no-repeat;
+    background: url(../img/header-contact.svg) left top / 24px no-repeat;
 }
 
 .header__start {
-    background: url(../img/header-start.svg) left top / 16px no-repeat;
+    background: url(../img/header-start.svg) left top / 24px no-repeat;
 }
 
 .header__platform {
-    background: url(../img/header-platform.svg) left top / 16px no-repeat;
+    background: url(../img/header-platform.svg) left top / 24px no-repeat;
 }
 
 .header__investing {
-    background: url(../img/header-investing.svg) left top / 16px no-repeat;
+    background: url(../img/header-investing.svg) left top / 24px no-repeat;
 }
 
 .header__specification {
-    background: url(../img/header-specification.svg) left top / 16px no-repeat;
+    background: url(../img/header-specification.svg) left top / 24px no-repeat;
 }
 
 .header__deposit {
-    background: url(../img/header-deposit.svg) left top / 16px no-repeat;
+    background: url(../img/header-deposit.svg) left top / 24px no-repeat;
 }
 
 .header__review {
-    background: url(../img/header-review.svg) left top / 16px no-repeat;
+    background: url(../img/header-review.svg) left top / 24px no-repeat;
 }
 
 .header__news {
-    background: url(../img/header-news.svg) left top / 16px no-repeat;
+    background: url(../img/header-news.svg) left top / 24px no-repeat;
 }
 
 .header__forecasts {
-    background: url(../img/header-forecasts.svg) left top / 16px no-repeat;
+    background: url(../img/header-forecasts.svg) left top / 24px no-repeat;
 }
 
 .header__calendar {
-    background: url(../img/header-calendar.svg) left top / 16px no-repeat;
+    background: url(../img/header-calendar.svg) left top / 24px no-repeat;
 }
 
 .header__basics {
-    background: url(../img/header-basics.svg) left top / 16px no-repeat;
+    background: url(../img/header-basics.svg) left top / 24px no-repeat;
 }
 
 .header__fundamental-analysis {
-    background: url(../img/header-fundamental-analysis.svg) left top / 16px no-repeat;
+    background: url(../img/header-fundamental-analysis.svg) left top / 24px no-repeat;
 }
 
 .header__technical-analysis {
-    background: url(../img/header-technical-analysis.svg) left top / 16px no-repeat;
+    background: url(../img/header-technical-analysis.svg) left top / 24px no-repeat;
 }
 
 .hero .container {
@@ -1550,7 +1550,7 @@ footer .container {
 
 p {
     /* font-size: 18px; */
-    color: #9C9C9C;
+    /* color: #9C9C9C; */
 }
 
 .footer__icons {
@@ -1632,14 +1632,20 @@ footer .sub-menu {
     list-style: none;
 }
 
+footer p {
+    color: #9C9C9C;
+}
+
 .footer__info {
     max-width: 490px;
     font-size: 14px;
     line-height: 115%;
+    color: #9C9C9C;
 }
 
 .copyright {
     margin-top: 20px;
     font-size: 14px;
     line-height: 115%;
+    color: #9C9C9C;
 }
