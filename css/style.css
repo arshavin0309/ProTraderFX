@@ -452,7 +452,6 @@ header .discription {
     background: var(--grey);
     transition: var(--transition);
     border: 2px solid var(--grey);
-    cursor: pointer;
 }
 
 .right-choice h3::before {
