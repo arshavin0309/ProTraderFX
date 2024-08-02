@@ -729,6 +729,8 @@ header .discription {
     padding: 30px 15px;
     border-radius: 10px;
     background: var(--grey);
+    border: 2px solid var(--grey);
+    transition: var(--transition);
 }
 
 .acquaintance__item:nth-child(1) {
@@ -755,6 +757,106 @@ header .discription {
     right: -35%;
 }
 
+.acquaintance__item:nth-child(1):before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: 2px;
+    top: -22px;
+    left: 20px;
+    background: url(../img/acquaintance-item-1.svg) center / contain no-repeat;
+}
+
+.acquaintance__item:nth-child(2):before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: 2px;
+    top: -22px;
+    left: 20px;
+    background: url(../img/acquaintance-item-2.svg) center / contain no-repeat;
+}
+
+.acquaintance__item:nth-child(3):before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: 2px;
+    top: -22px;
+    left: 20px;
+    background: url(../img/acquaintance-item-3.svg) center / contain no-repeat;
+}
+
+.acquaintance__item:nth-child(4):before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: 2px;
+    top: -22px;
+    left: 20px;
+    background: url(../img/acquaintance-item-4.svg) center / contain no-repeat;
+}
+
+.acquaintance__item:nth-child(1):hover {
+    border: 2px solid var(--green-hover);
+}
+
+.acquaintance__item:nth-child(2):hover {
+    border: 2px solid var(--red-hover);
+}
+
+.acquaintance__item:nth-child(3):hover {
+    border: 2px solid var(--pink-hover);
+}
+
+.acquaintance__item:nth-child(4):hover {
+    border: 2px solid var(--blue-hover);
+}
+
+.acquaintance__item:nth-child(1) p:before,
+.acquaintance__item:nth-child(2) p:before,
+.acquaintance__item:nth-child(3) p:before,
+.acquaintance__item:nth-child(4) p:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 42px;
+    height: 22px;
+    top: -1px;
+    left: 20px;
+    border-radius: 0 0 50px 50px;
+    background: var(--white);
+    transition: var(--transition);
+}
+
+.acquaintance__item:nth-child(1):hover p:before {
+    background: var(--green-hover);
+}
+
+.acquaintance__item:nth-child(2):hover p:before {
+    background: var(--red-hover);
+}
+
+.acquaintance__item:nth-child(3):hover p:before {
+    background: var(--pink-hover);
+}
+
+.acquaintance__item:nth-child(4):hover p:before {
+    background: var(--blue-hover);
+}
+
 .acquaintance__item .text1 {
     margin-bottom: 0;
     color: var(--black);
@@ -768,6 +870,12 @@ header .discription {
 .assets {
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+.assets__info {
+    z-index: 2;
+    position: relative;
+    max-width: 350px;
 }
 
 .assets h2 {
@@ -927,6 +1035,19 @@ header .discription {
     bottom: 120px;
 }
 
+.assets__list--1::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    top: 130px;
+    right: 350px;
+    bottom: 240px;
+    width: calc(100% - 350px);
+    height: calc(100% - 130px - 240px);
+    background: url(../img/assets-box-decor-1.svg) right top / contain no-repeat;
+}
+
 .assets__list--2::before {
     position: absolute;
     content: '';
@@ -937,6 +1058,19 @@ header .discription {
     top: 20px;
     right: 45px;
     bottom: 145px;
+}
+
+.assets__list--2::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    top: 70px;
+    right: 330px;
+    bottom: 305px;
+    width: calc(100% - 330px);
+    height: calc(100% - 70px - 305px);
+    background: url(../img/assets-box-decor-2.svg) right top / contain no-repeat;
 }
 
 .assets__list--3::before {
@@ -951,6 +1085,19 @@ header .discription {
     background: url(../img/assets-box-human-3.png) right center / contain no-repeat;
 }
 
+.assets__list--3::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    top: 60px;
+    right: 385px;
+    bottom: 300px;
+    width: calc(100% - 385px);
+    height: calc(100% - 60px - 300px);
+    background: url(../img/assets-box-decor-3.svg) right top / contain no-repeat;
+}
+
 .assets__list--4::before {
     position: absolute;
     content: '';
@@ -961,6 +1108,19 @@ header .discription {
     bottom: 160px;
     right: 90px;
     background: url(../img/assets-box-human-4.png) right center / contain no-repeat;
+}
+
+.assets__list--4::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    top: 110px;
+    right: 400px;
+    bottom: 255px;
+    width: calc(100% - 400px);
+    height: calc(100% - 110px - 255px);
+    background: url(../img/assets-box-decor-4.svg) right top / contain no-repeat;
 }
 
 .assets__list--5::before {
@@ -975,6 +1135,19 @@ header .discription {
     background: url(../img/assets-box-human-5.png) right center / contain no-repeat;
 }
 
+.assets__list--5::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    top: 55px;
+    right: 320px;
+    bottom: 320px;
+    width: calc(100% - 320px);
+    height: calc(100% - 55px - 320px);
+    background: url(../img/assets-box-decor-5.svg) right top / contain no-repeat;
+}
+
 .assets__list--6::before {
     position: absolute;
     content: '';
@@ -985,6 +1158,19 @@ header .discription {
     bottom: 165px;
     right: 100px;
     background: url(../img/assets-box-human-6.png) right center / contain no-repeat;
+}
+
+.assets__list--6::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    display: block;
+    top: 105px;
+    right: 370px;
+    bottom: 250px;
+    width: calc(100% - 370px);
+    height: calc(100% - 105px - 250px);
+    background: url(../img/assets-box-decor-6.svg) right top / contain no-repeat;
 }
 
 .assets__item {
@@ -1175,4 +1361,19 @@ header .discription {
     width: 50px;
     height: 50px;
     background: url(../img/Cocoa.svg) center / contain no-repeat;
+}
+
+.news {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.news h2 {
+    margin-bottom: 50px;
+}
+
+.news__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
 }
