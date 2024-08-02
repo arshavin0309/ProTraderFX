@@ -20,8 +20,10 @@
     --blue-hover: #75D1FF;
 
     --color-hover: #5256A4;
+    --color-hover: #0065B3;
+    /* --color-hover: #007aff; */
 
-    --transition: .2s ease-in-out all
+    --transition: .1s ease-in-out all
 }
 
 * {
