@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const swiper = new Swiper('.swiper', {
+    const swiper1 = new Swiper('.swiper-1', {
         loop: true,
 
         pagination: {
@@ -88,7 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    var newSwiper = new Swiper(".mySwiper", {
+    const swiper2 = new Swiper(".swiper-2", {
+
+        // autoplay: {
+        //     delay: 1750,
+        //     disableOnInteraction: false,
+        //     pauseOnMouseEnter: true,
+        // },
+
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
