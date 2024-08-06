@@ -87,6 +87,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+    var newSwiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        },
+    });
+
     // Табы
     let assetsBtn = document.querySelectorAll('.assets__btn');
     let assetsBox = document.querySelectorAll('.assets__box');
@@ -107,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let responsibilityBox = document.querySelectorAll('.responsibility__box');
 
     for (let i = 0; i < responsibilityBtn.length; i++) {
-        responsibilityBtn[i].addEventListener('click', ()=> {
+        responsibilityBtn[i].addEventListener('click', () => {
             for (let n = 0; n < responsibilityBtn.length; n++) {
                 responsibilityBtn[n].classList.remove('active');
                 responsibilityBox[n].classList.remove('active');
@@ -115,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             responsibilityBtn[i].classList.add('active');
             responsibilityBox[i].classList.add('active');
-        });    
+        });
     };
 
     // закрытие всех details при открытии нового details
