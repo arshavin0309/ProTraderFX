@@ -2100,3 +2100,72 @@ details[open] summary h3 {
     border-radius: 5px;
     border: 3px solid var(--grey-dark);
 }
+
+.documents .container {
+    display: grid;
+    grid-template-columns: 1fr 385px;
+    gap: 45px;
+    margin-top: 90px;
+    margin-bottom: 120px;
+}
+
+.documents__box {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background: var(--grey);
+    border-radius: 10px;
+}
+
+.documents__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: var(--black);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.documents__item::after {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    flex: 0 0 auto;
+    background: url(../img/btn-arrow-black.svg) var(--grey) center / 30px no-repeat;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.documents__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.documents__item:hover {
+    color: var(--color-hover);
+}
+
+.documents__item:hover::after {
+    background: url(../img/btn-arrow-black-hover.svg) var(--grey) center / 30px no-repeat;
+}
+
+.documents__banner {
+    height: 100%;
+    padding: 30px 25px;
+    background: url(../img/doc-banner-bg.png) var(--green-hover) center bottom / cover no-repeat;
+    border-radius: 10px;
+}
+
+.documents__banner h3 {
+    margin-bottom: 15px;
+}
+
+.documents__banner h3+p {
+    margin-bottom: 25px;
+}
