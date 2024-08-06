@@ -2402,6 +2402,7 @@ address::before {
 }
 
 .steps {
+    margin-top: 120px;
     margin-bottom: 120px;
 }
 
@@ -2473,4 +2474,128 @@ address::before {
 
 .steps__icon--appstore {
     background: url(../img/appstore.svg) var(--grey-dark) center / 23px 20px no-repeat;
+}
+
+.trading-platform {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.trading-platform h2 {
+    margin-bottom: 50px;
+}
+
+.trading-platform__list {
+    display: grid;
+    gap: 30px;
+}
+
+.trading-platform__item {
+    max-width: 510px;
+    padding: 70px 25px;
+}
+
+.trading-platform h3 {
+    margin-bottom: 15px;
+}
+
+.trading-platform p {
+    margin-bottom: 25px;
+}
+
+.trading-platform__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.trading-advantages {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.trading-advantages h2 {
+    margin-bottom: 65px;
+}
+
+.trading-advantages__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+}
+
+.trading-advantages__item {
+    position: relative;
+    padding: 30px 15px;
+    border-radius: 10px;
+    background: var(--grey);
+    transition: var(--transition);
+    border: 2px solid var(--grey);
+}
+
+.trading-advantages__item::before {
+    z-index: 1;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: -22px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin: 2px;
+    transition: var(--transition);
+}
+
+.trading-advantages__item:nth-child(1)::before {
+    background: url(../img/right-choice-item-1.svg) var(--grey) center / 18px no-repeat;
+}
+
+.trading-advantages__item:nth-child(2)::before {
+    background: url(../img/right-choice-item-2.svg) var(--grey) center / 18px no-repeat;
+}
+
+.trading-advantages__item:nth-child(3)::before {
+    background: url(../img/right-choice-item-3.svg) var(--grey) center / 18px no-repeat;
+}
+
+.trading-advantages h3::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 38px;
+    width: 38px;
+    height: 17px;
+    padding: 2px;
+    border-radius: 0 0 50px 50px;
+    background: var(--white);
+    left: 20px;
+    top: -1px;
+    transition: var(--transition);
+}
+
+.trading-advantages__item:nth-child(1):hover {
+    border: 2px solid var(--green-hover);
+}
+
+.trading-advantages__item:nth-child(1):hover h3::before {
+    background: var(--green-hover);
+}
+
+.trading-advantages__item:nth-child(2):hover {
+    border: 2px solid var(--red-hover);
+}
+
+.trading-advantages__item:nth-child(2):hover h3::before {
+    background: var(--red-hover);
+}
+
+.trading-advantages__item:nth-child(3):hover {
+    border: 2px solid var(--blue-hover);
+}
+
+.trading-advantages__item:nth-child(3):hover h3::before {
+    background: var(--blue-hover);
 }
