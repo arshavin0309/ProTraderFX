@@ -90,17 +90,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const swiper2 = new Swiper(".swiper-2", {
 
-        // autoplay: {
-        //     delay: 1750,
-        //     disableOnInteraction: false,
-        //     pauseOnMouseEnter: true,
-        // },
+        autoplay: {
+            delay: 1750,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        slidesPerView: 1,
+        spaceBetween: 30,
 
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
             renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + "</span>";
+                return '<span class="' + className + '">' + ('0' + (index + 1)) + "</span>";
             },
         },
     });
