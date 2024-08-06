@@ -102,4 +102,36 @@ document.addEventListener('DOMContentLoaded', () => {
             assetsBox[i].classList.add('active');
         });
     };
+
+    let responsibilityBtn = document.querySelectorAll('.responsibility__btn');
+    let responsibilityBox = document.querySelectorAll('.responsibility__box');
+
+    for (let i = 0; i < responsibilityBtn.length; i++) {
+        responsibilityBtn[i].addEventListener('click', ()=> {
+            for (let n = 0; n < responsibilityBtn.length; n++) {
+                responsibilityBtn[n].classList.remove('active');
+                responsibilityBox[n].classList.remove('active');
+            };
+
+            responsibilityBtn[i].classList.add('active');
+            responsibilityBox[i].classList.add('active');
+        });    
+    };
+
+    // закрытие всех details при открытии нового details
+    const details = document.querySelectorAll("details");
+
+    details.forEach((detail) => {
+        detail.addEventListener("toggle", () => {
+            if (detail.open) setTargetDetail(detail);
+        });
+    });
+
+    function setTargetDetail(targetDetail) {
+        details.forEach((detail) => {
+            if (detail !== targetDetail) {
+                detail.open = false;
+            }
+        });
+    }
 });
