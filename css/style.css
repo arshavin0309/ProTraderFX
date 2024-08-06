@@ -1935,7 +1935,7 @@ details[open] summary h3 {
 
 .awards .container {
     padding-top: 260px;
-    padding-bottom: 270px;  
+    padding-bottom: 270px;
 }
 
 .awards__box {
@@ -2168,4 +2168,153 @@ details[open] summary h3 {
 
 .documents__banner h3+p {
     margin-bottom: 25px;
+}
+
+.contacts {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.contacts .container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacts__left {
+    padding: 30px 25px;
+    border-radius: 10px;
+    background: var(--grey);
+}
+
+.contacts__left p {
+    margin-bottom: 30px;
+}
+
+.contacts__right {
+    padding: 30px 25px;
+    border-radius: 10px;
+    background: var(--grey);
+}
+
+input {
+    width: 100%;
+    max-width: 360px;
+    padding: 17px 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #E9E9E9;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    color: #929292;
+}
+
+textarea {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 25px;
+    resize: none;
+    padding: 17px 16px;
+    border: 1px solid #E9E9E9;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: 300;
+}
+
+.contacts__submit-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contacts__submit-box p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 115%;
+}
+
+form .btn {
+    padding: 10px 57px;
+}
+
+.contacts__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.contacts__tel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.contacts__tel::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    background: url(../img/contact-tel.svg) center / contain no-repeat;
+}
+
+.contacts__mail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.contacts__mail::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    background: url(../img/contact-mail.svg) center / contain no-repeat;
+}
+
+address {
+    max-width: 210px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-style: initial;
+    color: #000;
+}
+
+address::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    background: url(../img/contact-address.svg) center / contain no-repeat;
+}
+
+.contacts__support {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+}
+
+.contacts__support::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    background: url(../img/contact-support.svg) center / contain no-repeat;
 }

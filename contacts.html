@@ -37,9 +37,9 @@
                     <p class="text1">Задайте ваш вопрос или оставьте комментарий, наша команда поддержки на&nbsp;связи!</p>
 
                     <form action="">
-                        <input type="text" placeholder="Дмитрий Петров">
-                        <input type="email" placeholder="petrov@gmail.com">
-                        <textarea name="" id="" placeholder="Ваш комментарий или вопрос"></textarea>
+                        <input type="text" placeholder="Дмитрий Петров" required>
+                        <input type="email" placeholder="petrov@gmail.com" required>
+                        <textarea name="" id="" placeholder="Ваш комментарий или вопрос" required></textarea>
 
                         <div class="contacts__submit-box">
                             <button type="submit" class="btn btn--black">Войти</button>
@@ -54,7 +54,9 @@
                         <address>Silk St, Barbican, London EC2Y 8DS, Великобритания</address>
                         <div class="contacts__support">Наша тех. поддержка на&nbsp;связи с&nbsp;вами 24/7</div>
                     </div>
-                    <div id="map"></div>
+                    <div id="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb3abaabe622c4965d1f97c0df810de778549a202583d2e38423173a737dcf29&amp;width=100%25&amp;height=230&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
                 </div>
             </div>
         </section>
