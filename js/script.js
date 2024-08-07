@@ -168,11 +168,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 instrumentsTr[i].classList.add('active');
             };
             instrumentsShow.textContent = 'Скрыть';
+            instrumentsShow.classList.add('active');
         } else {
             for (let i = 0; i < instrumentsTr.length; i++) {
                 instrumentsTr[i].classList.remove('active');
             };
             instrumentsShow.textContent = 'Смотреть больше';
+            instrumentsShow.classList.remove('active');
         };
     });
 
