@@ -2491,8 +2491,26 @@ address::before {
 }
 
 .trading-platform__item {
-    max-width: 510px;
+    min-height: 345px;
     padding: 70px 25px;
+    border-radius: 10px;
+}
+
+.trading-platform__item:nth-child(1) {
+    background: url(../img/trading-platform-item-1.png) var(--grey) right bottom / contain no-repeat;
+}
+
+.trading-platform__item:nth-child(2) {
+    padding-left: 50%;
+    background: url(../img/trading-platform-item-2.png) var(--grey-dark) left 25px bottom 35px / 490px no-repeat;
+}
+
+.trading-platform__item:nth-child(3) {
+    background: url(../img/trading-platform-item-3.png) var(--grey) right bottom / contain no-repeat;
+}
+
+.trading-platform__box {
+    max-width: 510px;
 }
 
 .trading-platform h3 {
