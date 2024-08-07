@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спецификация контрактов</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script defer src="/js/script.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="header.html"></div>
+
+    <main>
+        <section class="hero-with-arrow">
+            <div class="wide-container">
+                <div class="hero-with-arrow__content">
+                    <h1>Спецификация контрактов</h1>
+                    <p class="text1">ProTraderFX предоставляет мгновенный доступ к&nbsp;глобальным рынкам на&nbsp;лучших условиях</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="instruments">
+            <div class="container">
+                <h2>Список инструментов</h2>
+
+                <div class="instruments__buttons">
+                    <button class="instruments__btn active">Валюты</button>
+                    <button class="instruments__btn">Индексы</button>
+                    <button class="instruments__btn">Сырье</button>
+                    <button class="instruments__btn">Акции США</button>
+                    <button class="instruments__btn">Облигации</button>
+                </div>
+
+                <div class="instruments__boxes"></div>
+
+                <div class="assets__body">
+                    <table class="instruments__table active">
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                            </tr>
+                            <tr>
+                                <td><span>AUDCAD</span><span>Australian Dollar vs Canadian Dollar</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 AUD</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>AUDCHF</span><span>Australian Dollar vs Swiss Franc</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 AUD</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>AUDJPY</span><span>Australian Dollar vs Japanese Yen</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 AUD</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>AUDNZD</span><span>Australian Dollar vs New Zealand Dollar</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 AUD</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>AUDUSD</span><span>Australian Dollar vs US Dollar</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 AUD</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURAUD</span><span>Euro vs Australian Dollar</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURCAD</span><span>Euro vs Canadian Dollar</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURCHF</span><span>Euro vs Swiss Franc</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURCZK</span><span>Euro vs Czech Republic Koruna</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURNOK</span><span>Euro vs Norwegian Krone</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURNZD</span><span>Euro vs New Zealand Dollar</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURSEK</span><span>Euro vs Swedish Krona</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURGBP</span><span>Euro vs British Pound</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURHUF</span><span>Euro vs Hungarian Forint</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURJPY</span><span>Euro vs Japanese Yen</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                            <tr>
+                                <td><span>EURRON</span><span>Euro vs Romanian Leu</span></td>
+                                <td>1 : 100</td>
+                                <td>100000 EUR</td>
+                                <td>00.00-23.59</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="instruments__table">
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                            </tr>
+                            <tr>
+                                <td><span>W20</span><span>Polish 20 Index</span></td>
+                                <td>1:50</td>
+                                <td>20</td>
+                                <td>08:45-16:50</td>
+                            </tr>
+                            <tr>
+                                <td><span>USTEC</span><span>NASDAQ Index</span></td>
+                                <td>1:50</td>
+                                <td>25</td>
+                                <td>00:05-22:15</td>
+                            </tr>
+                            <tr>
+                                <td><span>US500</span><span>Standard &amp; Poor’s Index</span></td>
+                                <td>1:50</td>
+                                <td>50</td>
+                                <td>00:05-22:15</td>
+                            </tr>
+                            <tr>
+                                <td><span>US30</span><span>Dow Jones Index</span></td>
+                                <td>1:50</td>
+                                <td>10</td>
+                                <td>00:05-22:15</td>
+                            </tr>
+                            <tr>
+                                <td><span>UK100</span><span>FTSE 100 Index</span></td>
+                                <td>1:50</td>
+                                <td>25</td>
+                                <td>02:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>SUI30</span><span>Swiss Market Index</span></td>
+                                <td>1:50</td>
+                                <td>30</td>
+                                <td>08:00-17:30</td>
+                            </tr>
+                            <tr>
+                                <td><span>RUSПродать2000</span><span>RusПродать 2000 Index</span></td>
+                                <td>1:50</td>
+                                <td>2</td>
+                                <td>04:05-23:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>RTS</span><span>РТС Index</span></td>
+                                <td>1:50</td>
+                                <td>50</td>
+                                <td>09:05-17:45</td>
+                            </tr>
+                            <tr>
+                                <td><span>NED25</span><span>Netherlands index</span></td>
+                                <td>1:50</td>
+                                <td>250</td>
+                                <td>08:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>MICEX</span><span>Индекс МосБиржи</span></td>
+                                <td>1:50</td>
+                                <td>30</td>
+                                <td>09:05-17:45</td>
+                            </tr>
+                            <tr>
+                                <td><span>MEXCOMP</span><span>Mexica Index</span></td>
+                                <td>1:50</td>
+                                <td>5</td>
+                                <td>14:30-21:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>KOSP200</span><span>South Korea Index</span></td>
+                                <td>1:50</td>
+                                <td>200</td>
+                                <td>02:05-08:10</td>
+                            </tr>
+                            <tr>
+                                <td><span>JP225</span><span>Nikkei Index</span></td>
+                                <td>1:50</td>
+                                <td>10</td>
+                                <td>02:05-8:10<br>09:35-18:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>INDIA50b</span><span>India Index</span></td>
+                                <td>1:50</td>
+                                <td>15</td>
+                                <td>05:50-12:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>HUNComp</span><span>Hungary Index</span></td>
+                                <td>1:50</td>
+                                <td>5</td>
+                                <td>09:10-17:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>HKO43</span><span>Hang Seng Index</span></td>
+                                <td>1:50</td>
+                                <td>7</td>
+                                <td>03:20-06:00<br>07:35-10:15</td>
+                            </tr>
+                            <tr>
+                                <td><span>F40</span><span>CAC Index</span></td>
+                                <td>1:50</td>
+                                <td>40</td>
+                                <td>08:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>EUROSTOX50</span><span>EuroStoxx Index</span></td>
+                                <td>1:50</td>
+                                <td>50</td>
+                                <td>08:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>DE30</span><span>DAX Index</span></td>
+                                <td>1:50</td>
+                                <td>30</td>
+                                <td>08:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>CZKCASH</span><span>Czeck Index</span></td>
+                                <td>1:50</td>
+                                <td>150</td>
+                                <td>09:20-16:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>CHNComp</span><span>China Index</span></td>
+                                <td>1:50</td>
+                                <td>20</td>
+                                <td>03:20-06:00<br>07:35-10:15</td>
+                            </tr>
+                            <tr>
+                                <td><span>BraComp</span><span>Brasilian Index</span></td>
+                                <td>1:50</td>
+                                <td>1</td>
+                                <td>14:05-22:55</td>
+                            </tr>
+                            <tr>
+                                <td><span>ASX200</span><span>Australia Index</span></td>
+                                <td>1:50</td>
+                                <td>20</td>
+                                <td>02:05-08:30<br>09:15-22:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="instruments__table">
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                            </tr>
+                            <tr>
+                                <td><span>BRENT</span><span>Brent Crude Oil</span></td>
+                                <td>1:50</td>
+                                <td>2000</td>
+                                <td>02:05-23:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>COCOA</span><span>Cocoa</span></td>
+                                <td>1:50</td>
+                                <td>50</td>
+                                <td>10:45-19:30</td>
+                            </tr>
+                            <tr>
+                                <td><span>CT</span><span>US Cotton No.2</span></td>
+                                <td>1:50</td>
+                                <td>1500</td>
+                                <td>08:30-20:20</td>
+                            </tr>
+                            <tr>
+                                <td><span>KC</span><span>US Coffe</span></td>
+                                <td>1:50</td>
+                                <td>1500</td>
+                                <td>10:15-19:30</td>
+                            </tr>
+                            <tr>
+                                <td><span>NG</span><span>Natural Gas</span></td>
+                                <td>1:50</td>
+                                <td>50000</td>
+                                <td>08:30-23:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>SB</span><span>US Sugar No.11</span></td>
+                                <td>1:50</td>
+                                <td>10000</td>
+                                <td>09:30-19:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>WHEAT</span><span>Wheat</span></td>
+                                <td>1:50</td>
+                                <td>400</td>
+                                <td>02:05-14:45<br>15:35-20:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>WTI</span><span>WTI Light Cruide Oil</span></td>
+                                <td>1:50</td>
+                                <td>2000</td>
+                                <td>02:05-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>ZC</span><span>US Corn</span></td>
+                                <td>1:50</td>
+                                <td>300</td>
+                                <td>02:05-20:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>ZS</span><span>US Soybeans</span></td>
+                                <td>1:50</td>
+                                <td>150</td>
+                                <td>02:05-20:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>ZINC</span><span>ZINC</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>08:30-19:30</td>
+                            </tr>
+                            <tr>
+                                <td><span>SILVER</span><span>Silver(spot)</span></td>
+                                <td>1:50</td>
+                                <td>10000</td>
+                                <td>00:05-22:59</td>
+                            </tr>
+                            <tr>
+                                <td><span>PLATINUM</span><span>Platinum</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>00:05-22:59</td>
+                            </tr>
+                            <tr>
+                                <td><span>PA</span><span>Palladium</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>00:05-22:59</td>
+                            </tr>
+                            <tr>
+                                <td><span>NICKEL</span><span>Nickel</span></td>
+                                <td>1:50</td>
+                                <td>10</td>
+                                <td>08:30-19:30</td>
+                            </tr>
+                            <tr>
+                                <td><span>GOLD</span><span>Gold(spot)</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>00:05-22:59</td>
+                            </tr>
+                            <tr>
+                                <td><span>COPPER</span><span>Copper</span></td>
+                                <td>1:50</td>
+                                <td>10</td>
+                                <td>08:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>ALUMINIUM</span><span>Aluminium</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>08:30-19:30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="instruments__table">
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                            </tr>
+                            <tr>
+                                <td><span>AA</span><span>Alcoa Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>AAPL</span><span>Apple Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>AMZN</span><span>Amazon Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>AXP</span><span>American Express Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>BA</span><span>Boeing Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>BAC</span><span>Bank of America Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>BP</span><span>British Petroleum</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>CAT</span><span>Caterpillar Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>CSCO</span><span>Cisco Sys Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>CVX</span><span>Chevron Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>DIS</span><span>Walt Disney Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>EBAY</span><span>Ebay Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>FB</span><span>Facebook Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>GE</span><span>General Electric Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>GOOG</span><span>Alphabet Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>HAL</span><span>Halliburton Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>HD</span><span>Home Depot Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>HON</span><span>HoneyWell Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                            <tr>
+                                <td><span>HPQ</span><span>Hewlett Packard Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="instruments__table">
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                            </tr>
+                            <tr>
+                                <td><span>YNDX</span><span>Yandex</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                            </tr>
+                            <tr>
+                                <td><span>SBER</span><span>Sberbank</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                            </tr>
+                            <tr>
+                                <td><span>ROSN</span><span>Rosneft</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                            </tr>
+                            <tr>
+                                <td><span>LKOH</span><span>LUKOIL</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                            </tr>
+                            <tr>
+                                <td><span>GAZP</span><span>Gazprom</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button class="instruments__show">Смотреть больше</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="wide-container">
+                <div class="banner__container">
+                    <div class="banner__content">
+                        <h2>ProTraderFX&nbsp;— ваш надёжный торговый партнёр</h2>
+                        <p class="text1">Индивидуальная поддержка, персональные решения, удобная торговая платформа</p>
+
+                        <a href="#" class="btn btn--black">Открыть счёт</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>
