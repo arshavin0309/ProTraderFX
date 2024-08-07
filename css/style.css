@@ -1912,6 +1912,16 @@ details[open] summary h3 {
     background: var(--grey-dark);
 }
 
+details ul {
+    padding-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+details p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
 .banner-2 h2 {
     max-width: 870px;
     margin: auto;
@@ -2594,6 +2604,10 @@ address::before {
     transition: var(--transition);
 }
 
+.trading-advantages__item p {
+    margin-top: 15px;
+}
+
 .trading-advantages__item:nth-child(1):hover {
     border: 2px solid var(--green-hover);
 }
@@ -2616,4 +2630,51 @@ address::before {
 
 .trading-advantages__item:nth-child(3):hover h3::before {
     background: var(--blue-hover);
+}
+
+.recommendations {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.recommendations h2 {
+    margin-bottom: 50px;
+}
+
+.recommendations__box {
+    display: grid;
+    grid-template-columns: 385px 1fr;
+    gap: 30px;
+}
+
+.recommendations__left {
+    background: url(../img/recommendations-image.png) center top / contain no-repeat;
+}
+
+.popular {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.popular h2 {
+    margin-bottom: 15px;
+}
+
+.popular h2+p {
+    margin-bottom: 50px;
+}
+
+.popular__box {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 380px 380px;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    background: var(--grey);
+}
+
+.popular__item:nth-child(1) {
+    grid-row: 1/3;
 }
