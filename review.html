@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обзор рынков</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script defer src="/js/script.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="header.html"></div>
+
+    <main>
+        <section class="hero-with-arrow">
+            <div class="wide-container">
+                <div class="hero-with-arrow__content">
+                    <h1>Обзор рынков</h1>
+                    <p class="text1">Лучшие аналитические материалы финансового сектора</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quotes">
+            <div class="container">
+                <h2>Котировки On-line</h2>
+                <p class="text1">Котировки финансовых рынков с&nbsp;дополнительной информацией и&nbsp;графикам</p>
+
+                <div class="quotes__box">
+                    <script src="https://api.marketcheese.com/widgets/quotes/widget.js" data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":true,"columns":"ask,bid,dayOpening,dayMax,dayMin,todayIncrement,todayIncrementAbs","groups":[{"name":"Металлы","symbols":"97,98,99,100,104,127,128,129"}],"devSource":"WDT"}'></script>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts-online">
+            <div class="container">
+                <h2>Графики On-line</h2>
+                <p class="text1">Используйте главный инструмент трейдеров&nbsp;&mdash; технический анализ на&nbsp;графике финансового инструмента</p>
+
+                <div class="charts-online__box">
+                    <div>
+                        <script src="https://api.marketcheese.com/widgets/chart/widget.js" data-config='{"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"ru","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"EURUSD","devSource":"WDT"}'></script>
+                    </div>
+                    
+                    <div>
+                        <script src="https://api.marketcheese.com/widgets/chart/widget.js" data-config='{"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"ru","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"TSLA","devSource":"WDT"}'></script>
+                    </div>
+                    
+                    <div>
+                        <script src="https://api.marketcheese.com/widgets/chart/widget.js" data-config='{"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"ru","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"BTCUSD","devSource":"WDT"}'></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="widgets-box">
+            <div class="container">
+                <div class="widgets-box__box">
+                    <div class="widgets-box__item">
+                        <h2>Лидеры рынка</h2>
+                        <p class="text1">Принимайте быстрые торговые решения благодаря показателям лидеров рынка</p>
+                        <div class="widgets-box__widget">
+                            <script src="https://api.marketcheese.com/widgets/leaders/widget.js" data-config='{"filters":{"segments":"14,4,16,8,5,7,15"},"language":"ru","devSource":"WDT"}'></script>
+                        </div>
+                    </div>
+                    <div class="widgets-box__item">
+                        <h2>Важное событие</h2>
+                        <p class="text1">Главные экономические события мира и&nbsp;реакция рынка в&nbsp;реальном времени</p>
+                        <div class="widgets-box__widget">
+                            <script src="https://api.marketcheese.com/widgets/notifier/widget.js" data-config='{"language":"ru","period":"all","multipleIndicators":false,"adaptive":true,"currencies":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19","devSource":"WDT"}'></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quotes">
+            <div class="container">
+                <h2>Прогнозы рынка</h2>
+                <p class="text1">Торговые идеи, прогнозы, гипотезы, результаты проведенного анализа от&nbsp;трейдеров и&nbsp;аналитиков со&nbsp;всего мира</p>
+
+                <div class="quotes__box">
+                    <script src="https://api.marketcheese.com/widgets/forecasts/widget.js" data-config='{"language":"ru","orientation":"horizontal","maxRows":2,"segments":"14,4,16,8,5,7,15","devSource":"WDT"}'></script>
+                </div>
+            </div>
+        </section>
+        
+        <section class="banner banner-3">
+            <div class="wide-container">
+                <div class="banner__container">
+                    <div class="banner__content">
+                        <h2>Торгуйте с&nbsp;надежным ECN Брокером</h2>
+                        <p class="text1">Более миллиона трейдеров доверяют нам</p>
+
+                        <a href="#" class="btn btn--black">Открыть счёт</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>

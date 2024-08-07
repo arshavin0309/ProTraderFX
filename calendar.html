@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь событий</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script defer src="/js/script.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="header.html"></div>
+
+    <main>
+        <section class="hero-with-arrow">
+            <div class="wide-container">
+                <div class="hero-with-arrow__content">
+                    <h1>Календарь событий</h1>
+                    <p class="text1">Работайте на&nbsp;финансовых рынках с&nbsp;помощью экономического календаря&nbsp;&mdash; применяйте любые торговые инструменты и&nbsp;стратегии</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quotes">
+            <div class="container">
+                <div class="quotes__box">
+                    <script src="https://api.marketcheese.com/widgets/calendar/widget.js" data-config='{"filters":{"countries":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,81,186,211"},"language":"ru","timezone":"current","upload":"manual","devSource":"WDT"}'></script>
+                </div>
+            </div>
+        </section>
+
+        <section class="for-what">
+            <div class="container">
+                <div class="for-what__content">
+                    <h2>Для чего нужен экономический календарь?</h2>
+                    <p class="text1">Календарь форекс позволяет следить за&nbsp;новостями и&nbsp;другими важными публикациями, которые выходят во&nbsp;время торговых сессий.</p>
+                    <p class="text1">Это фундаментальные данные, влияющие на&nbsp;цены рыночных инструментов, и&nbsp;именно поэтому экономический календарь является одним из&nbsp;главных инструментов для анализа рынка в&nbsp;режиме реального времени.</p>
+                </div>
+                <div class="for-what__image">
+                    <img src="/img/for-what-image.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="banner banner-3">
+            <div class="wide-container">
+                <div class="banner__container">
+                    <div class="banner__content">
+                        <h2>Торгуйте с&nbsp;надежным ECN Брокером</h2>
+                        <p class="text1">Более миллиона трейдеров доверяют нам</p>
+
+                        <a href="#" class="btn btn--black">Открыть счёт</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>
