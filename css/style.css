@@ -3342,14 +3342,29 @@ address::before {
     margin-bottom: 10px;
 }
 
+.fundamental-analysis-page .hero-with-arrow {
+    margin-bottom: 0;
+}
+
 .fundamental-analysis-page .hero-with-arrow p {
     max-width: 1000px;
     margin: auto;
 }
 
+.consider {
+    margin-top: 0;
+}
+
 .consider h2 {
     margin-bottom: 25px;
     text-align: left;
+}
+
+.methods {
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: url(../img/methods-bg.png) center / contain no-repeat;
 }
 
 .methods h2 {
@@ -3359,12 +3374,49 @@ address::before {
 .methods__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 30px;
-    column-gap: 50px;
+    row-gap: 50px;
+    column-gap: 30px;
 }
 
 .methods__item {
     padding: 30px 25px;
     border-radius: 10px;
     background: var(--grey);
+}
+
+.methods__item h3 {
+    margin-bottom: 15px;
+}
+
+.methods__item:nth-child(1) h3:before {
+    content: '1.';
+    margin-right: 20px;
+}
+
+.methods__item:nth-child(2) h3:before {
+    content: '2.';
+    margin-right: 20px;
+}
+
+.methods__item:nth-child(3) h3:before {
+    content: '3.';
+    margin-right: 20px;
+}
+
+.methods__item:nth-child(4) h3:before {
+    content: '4.';
+    margin-right: 20px;
+}
+
+.methods__item:nth-child(5) h3:before {
+    content: '5.';
+    margin-right: 20px;
+}
+
+.methods__item:nth-child(5) {
+    grid-column: 1/3;
+}
+
+.methods__item p:not(:last-child) {
+    margin-bottom: 10px;
 }
