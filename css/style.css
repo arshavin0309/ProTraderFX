@@ -52,6 +52,11 @@ img {
     padding-right: 30px;
 }
 
+section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -351,6 +356,10 @@ header .discription {
     background: url(../img/header-technical-analysis.svg) left top / 24px no-repeat;
 }
 
+.hero {
+    margin-top: 10px;
+}
+
 .hero .container {
     height: 650px;
     display: flex;
@@ -432,11 +441,6 @@ header .discription {
 
 .cards__item--blue {
     background: var(--blue);
-}
-
-.right-choice {
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .right-choice h2 {
@@ -709,7 +713,7 @@ header .discription {
 .acquaintance__container {
     padding-top: 120px;
     padding-bottom: 120px;
-    background: url(../img/acquaintance-bg.png) center / cover no-repeat;
+    background: url(../img/acquaintance-bg.png) center / contain no-repeat;
     border-radius: 10px;
 }
 
@@ -877,11 +881,6 @@ header .discription {
 
 .acquaintance img {
     max-height: 430px;
-}
-
-.assets {
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .assets__info {
@@ -1530,11 +1529,6 @@ header .discription {
     background: url(../img/europe.png) right center / contain no-repeat;
 }
 
-.banner {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .banner h2 {
     margin-bottom: 15px;
 }
@@ -1666,6 +1660,10 @@ footer .copyright {
     color: #9C9C9C;
 }
 
+.error {
+    margin-top: 10px;
+}
+
 .error__container {
     margin-top: 10px;
     padding-top: 195px;
@@ -1693,11 +1691,11 @@ footer .copyright {
 }
 
 .hero-with-arrow {
+    margin-top: 10px;
     margin-bottom: 120px;
 }
 
 .hero-with-arrow__content {
-    margin-top: 10px;
     padding-top: 155px;
     padding-bottom: 100px;
     background: var(--grey-dark);
@@ -1937,6 +1935,10 @@ details p:not(:last-child) {
     margin-bottom: 15px;
 }
 
+details .attention {
+    margin-top: 40px;
+}
+
 .banner-2 h2 {
     max-width: 870px;
     margin: auto;
@@ -1958,7 +1960,7 @@ details p:not(:last-child) {
 
 .awards {
     margin-top: 30px;
-    background: url(../img/awards-bg.png) center / cover no-repeat;
+    background: url(../img/awards-bg.png) center / contain no-repeat;
 }
 
 .awards .container {
@@ -2083,7 +2085,7 @@ details p:not(:last-child) {
 }
 
 .average-time {
-    background: url(../img/average-time-bg.png) center / cover no-repeat;
+    background: url(../img/average-time-bg.png) center / contain no-repeat;
 }
 
 .average-time .container {
@@ -2197,11 +2199,6 @@ details p:not(:last-child) {
 
 .documents__banner h3+p {
     margin-bottom: 25px;
-}
-
-.contacts {
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .contacts .container {
@@ -2348,11 +2345,6 @@ address::before {
     background: url(../img/contact-support.svg) center / contain no-repeat;
 }
 
-.start {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .start h2 {
     margin-bottom: 50px;
 }
@@ -2427,11 +2419,6 @@ address::before {
     font-size: 24px;
 }
 
-.steps {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .steps h2 {
     margin-bottom: 50px;
 }
@@ -2502,11 +2489,6 @@ address::before {
     background: url(../img/appstore.svg) var(--grey-dark) center / 20px no-repeat;
 }
 
-.trading-platform {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .trading-platform h2 {
     margin-bottom: 50px;
 }
@@ -2550,13 +2532,6 @@ address::before {
 .trading-platform__buttons {
     display: flex;
     gap: 20px;
-}
-
-
-
-.trading-advantages {
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .trading-advantages h2 {
@@ -2648,11 +2623,6 @@ address::before {
     background: var(--blue-hover);
 }
 
-.recommendations {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .recommendations h2 {
     margin-bottom: 50px;
 }
@@ -2664,12 +2634,12 @@ address::before {
 }
 
 .recommendations__left {
+    width: 385px;
+    height: 385px;
     background: url(../img/recommendations-image.png) center top / contain no-repeat;
 }
 
 .popular {
-    margin-top: 120px;
-    margin-bottom: 120px;
     text-align: center;
 }
 
@@ -2693,11 +2663,6 @@ address::before {
 
 .popular__item:nth-child(1) {
     grid-row: 1/3;
-}
-
-.instruments {
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .instruments h2 {
@@ -2870,11 +2835,6 @@ address::before {
     transform: rotate(45deg);
 }
 
-.quotes {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .quotes h2 {
     margin-bottom: 15px;
 }
@@ -2890,11 +2850,6 @@ address::before {
     border-radius: 10px;
 }
 
-.forecasts {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .forecasts h2 {
     margin-bottom: 15px;
 }
@@ -2908,11 +2863,6 @@ address::before {
     padding: 20px;
     background: var(--grey);
     border-radius: 10px;
-}
-
-.popular-methods {
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .popular-methods__box {
@@ -2931,11 +2881,6 @@ address::before {
 
 .popular-methods p {
     margin-bottom: 25px;
-}
-
-.charts-online {
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .charts-online h2 {
@@ -2986,11 +2931,6 @@ address::before {
     margin-bottom: 50px;
 }
 
-.for-what {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .for-what .container {
     display: flex;
     gap: 30px;
@@ -3014,11 +2954,6 @@ address::before {
 
 .for-what__image img {
     border-radius: 10px;
-}
-
-.news-page {
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .news-page__container {
@@ -3240,11 +3175,6 @@ address::before {
     color: var(--color-hover);
 }
 
-.other-news {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .other-news h2 {
     margin-bottom: 50px;
 }
@@ -3260,7 +3190,6 @@ address::before {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
     overflow: hidden;
-
     padding: 30px 20px 30px 15px;
     border-radius: 10px;
     background: var(--grey);
@@ -3272,7 +3201,6 @@ address::before {
 
 .other-news h3 {
     margin-bottom: 10px;
-    
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -3280,9 +3208,139 @@ address::before {
 }
 
 .other-news p {
-    
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+}
+
+.basics-page .recommendations__box {
+    align-items: center;
+}
+
+.basics-page .recommendations__left {
+    background: url(../img/basics-img.png) center / contain no-repeat;
+}
+
+.advantages-and-disadvantages h2 {
+    margin-bottom: 50px;
+}
+
+.advantages-and-disadvantages .recommendations__right h2 {
+    text-align: left;
+}
+
+.advantages-of-trading h2 {
+    max-width: 620px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.advantages-of-trading li {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    list-style: none;
+}
+
+.advantages-of-trading li::before {
+    content: '';
+    flex: 0 0 auto;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin-top: 7px;
+    background: url(../img/list-check.svg) center / contain no-repeat;
+}
+
+.advantages-of-trading li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.differences {
+    margin-bottom: 0;
+}
+
+.differences h2 {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.differences__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.differences li {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    list-style: none;
+}
+
+.differences li::before {
+    content: '';
+    flex: 0 0 auto;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin-top: 7px;
+    background: url(../img/list-check.svg) center / contain no-repeat;
+}
+
+.differences li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.differences__image img {
+    border-radius: 10px;
+}
+
+.advantages-and-disadvantages {
+    margin-top: 0;
+    padding-top: 190px;
+    padding-bottom: 50px;
+    background: url(../img/advantages-and-disadvantages-image.png) center / contain no-repeat;
+}
+
+.advantages-and-disadvantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 120px;
+}
+
+.advantages-and-disadvantages__item {
+    padding: 30px 25px;
+    background: var(--grey-dark);
+    border-radius: 10px;
+}
+
+.advantages-and-disadvantages h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.advantages-and-disadvantages li {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    list-style: none;
+}
+
+.advantages-and-disadvantages li::before {
+    content: '';
+    flex: 0 0 auto;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin-top: 7px;
+    background: url(../img/list-check-white.svg) center / contain no-repeat;
+}
+
+.advantages-and-disadvantages li:not(:last-child) {
+    margin-bottom: 10px;
 }
