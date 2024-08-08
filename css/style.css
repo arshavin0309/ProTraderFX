@@ -358,6 +358,7 @@ header .discription {
 
 .hero {
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .hero .container {
@@ -404,8 +405,8 @@ header .discription {
     border-radius: 10px;
 }
 
-.cards .wide-container {
-    padding-top: 20px;
+.cards {
+    margin-top: 20px;
 }
 
 .cards__item {
@@ -1703,6 +1704,18 @@ footer .copyright {
     border-radius: 10px;
 }
 
+.hero-with-arrow__content::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 102px;
+    height: 30px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/cone.svg) var(--white) center / contain no-repeat;
+}
+
 .hero-with-arrow__content::after {
     position: absolute;
     content: '';
@@ -1981,20 +1994,24 @@ details .attention {
     padding: 75px;
     text-align: center;
     background: var(--grey-dark);
+    background: url(../img/awards-around.svg) center / contain no-repeat;
     border-radius: 50%;
 }
 
 .awards__item {
     position: absolute;
-    width: 290px;
-    height: 290px;
+    /* width: 290px; */
+    /* height: 290px; */
+    width: 280px;
+    height: 280px;
     padding: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 5px solid var(--white);
+    /* border: 5px solid var(--white); */
+    /* border: 5px solid transparent; */
 }
 
 .awards__item::before {
@@ -2020,40 +2037,50 @@ details .attention {
 }
 
 .awards__item--1 {
-    top: -25%;
+    /* top: -25%; */
+    top: -18%;
     left: 50%;
     transform: translateX(-50%);
     background: var(--red);
 }
 
 .awards__item--2 {
-    top: 1%;
-    right: -20%;
+    /* top: 1%;
+    right: -20%; */
+    top: 6%;
+    right: -19%;
     background: var(--pink);
 }
 
 .awards__item--3 {
-    bottom: 1%;
-    right: -20%;
+    /* bottom: 1%;
+    right: -20%; */
+    bottom: 5%;
+    right: -18%;
     background: var(--blue);
 }
 
 .awards__item--4 {
-    bottom: -25%;
+    /* bottom: -25%; */
+    bottom: -16%;
     left: 50%;
     transform: translateX(-50%);
     background: var(--green);
 }
 
 .awards__item--5 {
-    bottom: 1%;
-    left: -20%;
+    /* bottom: 1%;
+    left: -20%; */
+    bottom: 5%;
+    left: -19%;
     background: var(--pink);
 }
 
 .awards__item--6 {
-    top: 1%;
-    left: -20%;
+    /* top: 1%;
+    left: -20%; */
+    top: 6%;
+    left: -22%;
     background: var(--green);
 }
 
@@ -3300,7 +3327,7 @@ address::before {
     margin-top: 0;
     padding-top: 190px;
     padding-bottom: 50px;
-    background: url(../img/advantages-and-disadvantages-image.png) center top / contain no-repeat;
+    background: url(../img/advantages-and-disadvantages-image.png) center top / 100% no-repeat;
 }
 
 .advantages-and-disadvantages__list {
@@ -3319,6 +3346,10 @@ address::before {
 .advantages-and-disadvantages h3 {
     margin-bottom: 15px;
     text-align: center;
+}
+
+.advantages-and-disadvantages details summary h3 {
+    margin-bottom: 0;
 }
 
 .advantages-and-disadvantages li {
@@ -3449,7 +3480,7 @@ address::before {
     margin: 0;
     padding-top: 120px;
     padding-bottom: 120px;
-    background: url(../img/instruments-bg.png) center top / contain no-repeat;
+    background: url(../img/instruments-bg.png) center top / 100% no-repeat;
 }
 
 .instruments-box {
@@ -3481,4 +3512,26 @@ address::before {
 
 .technical-analysis-page .banner {
     margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+details {
+    /* Set a max-height value just enough to show the summary */
+    max-height: 15rem;
+    /* Hide the rest of the content */
+    overflow: hidden;
+    /* Animate the change */
+    transition: max-height 400ms ease-out;
+}
+
+input:checked + details,
+details:has(input:checked) {
+    max-height: 576px; /* Set a max-height value enough to show all the content */
 }

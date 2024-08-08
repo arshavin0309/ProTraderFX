@@ -158,25 +158,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let instrumentsBtn = document.querySelectorAll('.instruments__btn');
     let instrumentsTable = document.querySelectorAll('.instruments__table');
-    
+
     let instrumentsShow = document.querySelector('.instruments__show');
     let instrumentsTr = document.querySelectorAll('.instruments__table tr');
 
-    instrumentsShow.addEventListener('click', () => {
-        if (instrumentsShow.textContent === 'Смотреть больше') {
-            for (let i = 0; i < instrumentsTr.length; i++) {
-                instrumentsTr[i].classList.add('active');
+    if (instrumentsShow) {
+        instrumentsShow.addEventListener('click', () => {
+            if (instrumentsShow.textContent === 'Смотреть больше') {
+                for (let i = 0; i < instrumentsTr.length; i++) {
+                    instrumentsTr[i].classList.add('active');
+                };
+                instrumentsShow.textContent = 'Скрыть';
+                instrumentsShow.classList.add('active');
+            } else {
+                for (let i = 0; i < instrumentsTr.length; i++) {
+                    instrumentsTr[i].classList.remove('active');
+                };
+                instrumentsShow.textContent = 'Смотреть больше';
+                instrumentsShow.classList.remove('active');
             };
-            instrumentsShow.textContent = 'Скрыть';
-            instrumentsShow.classList.add('active');
-        } else {
-            for (let i = 0; i < instrumentsTr.length; i++) {
-                instrumentsTr[i].classList.remove('active');
-            };
-            instrumentsShow.textContent = 'Смотреть больше';
-            instrumentsShow.classList.remove('active');
-        };
-    });
+        });
+    };
 
     for (let i = 0; i < instrumentsBtn.length; i++) {
         instrumentsBtn[i].addEventListener('click', () => {
