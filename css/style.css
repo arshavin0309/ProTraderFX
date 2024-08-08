@@ -1697,7 +1697,7 @@ footer .copyright {
 
 .hero-with-arrow__content {
     padding-top: 155px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     background: var(--grey-dark);
     text-align: center;
     border-radius: 10px;
@@ -3340,4 +3340,31 @@ address::before {
 
 .advantages-and-disadvantages li:not(:last-child) {
     margin-bottom: 10px;
+}
+
+.fundamental-analysis-page .hero-with-arrow p {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.consider h2 {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.methods h2 {
+    margin-bottom: 40px;
+}
+
+.methods__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 50px;
+}
+
+.methods__item {
+    padding: 30px 25px;
+    border-radius: 10px;
+    background: var(--grey);
 }
