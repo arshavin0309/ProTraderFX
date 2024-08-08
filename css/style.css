@@ -3214,10 +3214,6 @@ address::before {
     overflow: hidden;
 }
 
-.basics-page .recommendations__box {
-    align-items: center;
-}
-
 .basics-page .recommendations__left {
     background: url(../img/basics-img.png) center / contain no-repeat;
 }
@@ -3227,6 +3223,7 @@ address::before {
 }
 
 .advantages-and-disadvantages .recommendations__right h2 {
+    margin-top: 30px;
     text-align: left;
 }
 
@@ -3303,7 +3300,7 @@ address::before {
     margin-top: 0;
     padding-top: 190px;
     padding-bottom: 50px;
-    background: url(../img/advantages-and-disadvantages-image.png) center / contain no-repeat;
+    background: url(../img/advantages-and-disadvantages-image.png) center top / contain no-repeat;
 }
 
 .advantages-and-disadvantages__list {
