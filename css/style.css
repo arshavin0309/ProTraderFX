@@ -3059,7 +3059,12 @@ address::before {
 }
 
 .news-page__item:first-child .news-page__content {
-    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 250px;
+    padding-top: 50px;
+    padding-right: 70px;
     background: #00000000;
     /* ВАЖНО */
     /* background: #00000099; */
@@ -3080,6 +3085,11 @@ address::before {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+}
+
+.news-page__item:first-child h3 {
+    max-width: 580px;
+    -webkit-line-clamp: 2;
 }
 
 .news-page__item p {
@@ -3105,7 +3115,11 @@ address::before {
 }
 
 .news-aside__item:first-child .news-aside__box {
-    padding: 120px 45px 30px 15px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px 45px 30px 15px;
     border-radius: 10px;
     color: var(--white);
     /* ВАЖНО */
@@ -3139,6 +3153,10 @@ address::before {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+}
+
+.news-aside__item:first-child h3 {
+    -webkit-line-clamp: 4;
 }
 
 .news-aside__item:not(:first-child) h3 {
@@ -3220,4 +3238,51 @@ address::before {
 
 .news-content__copyright a:hover {
     color: var(--color-hover);
+}
+
+.other-news {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.other-news h2 {
+    margin-bottom: 50px;
+}
+
+.other-news__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.other-news__item {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+
+    padding: 30px 20px 30px 15px;
+    border-radius: 10px;
+    background: var(--grey);
+}
+
+.other-news__date {
+    margin-bottom: 20px;
+}
+
+.other-news h3 {
+    margin-bottom: 10px;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.other-news p {
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
