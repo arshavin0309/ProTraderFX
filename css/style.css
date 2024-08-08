@@ -3449,8 +3449,36 @@ address::before {
     margin: 0;
     padding-top: 120px;
     padding-bottom: 120px;
+    background: url(../img/instruments-bg.png) center top / contain no-repeat;
 }
 
 .instruments-box {
     margin-top: 120px;
+}
+
+.instruments-box__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.instruments-box h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.instruments-box__item p {
+    margin-bottom: 15px;
+}
+
+.instruments-box__item li {
+    list-style: none;
+}
+
+.instruments-box__item li::before {
+    content: '- ';
+}
+
+.technical-analysis-page .banner {
+    margin-top: 0;
 }
