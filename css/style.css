@@ -957,7 +957,7 @@ header .discription {
     color: var(--color-hover);
 }
 
-.assets__btn.active {
+.assets__btn.swiper-slide-thumb-active {
     background: var(--grey-dark);
 }
 
@@ -1011,19 +1011,9 @@ header .discription {
 
 .assets__box {
     position: relative;
-    display: none;
     padding: 100px 25px 35px;
     background: var(--grey);
     border-radius: 10px;
-}
-
-.assets__box.active {
-    display: block;
-
-    animation-name: content;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
 }
 
 .assets__box:nth-child(1) {
@@ -3806,78 +3796,9 @@ address::before {
     font-size: 14px;
 }
 
-.table-overflow {
-    /* overflow-x: auto; */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-html,
-body {
-    /* position: relative; */
-    /* height: 100%; */
-}
-
-body {
-    /* background: #eee; */
-    /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
-    font-size: 14px;
-    /* color: #000; */
-    margin: 0;
-    padding: 0;
-}
-
 .swiper {
     width: 100%;
     height: 100%;
-}
-
-.swiper-slide {
-    /* text-align: center;
-    font-size: 18px; */
-    /* background: #fff; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
-.swiper-slide img {
-    /* display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; */
-}
-
-body {
-    /* background: #000; */
-    /* color: #000; */
-}
-
-.swiper {
-    /* width: 100%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
-.swiper-slide {
-    /* background-size: cover;
-    background-position: center; */
 }
 
 .swiper-4 {
@@ -3888,22 +3809,14 @@ body {
 .swiper-3 {
     height: 20%;
     box-sizing: border-box;
-    padding: 10px 0;
+    padding-bottom: 30px;
 }
 
 .swiper-3 .swiper-slide {
     width: 25%;
     height: 100%;
-    opacity: 0.4;
 }
 
-.swiper-3 .swiper-slide-thumb-active {
-    opacity: 1;
-}
-
-.swiper-slide img {
-    /* display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; */
+.table-overflow {
+    /* overflow-x: auto; */
 }
