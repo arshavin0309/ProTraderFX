@@ -205,4 +205,11 @@ document.addEventListener('DOMContentLoaded', () => {
             heightStyle: "content"
         });
     });
+
+    for (let table of document.getElementsByTagName("table")) {
+        let tableOverflow = document.createElement("div");
+        tableOverflow.className = "table-overflow";
+        table.parentElement.replaceChild(tableOverflow, table);
+        tableOverflow.appendChild(table);
+    }
 });

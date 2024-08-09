@@ -719,7 +719,7 @@ header .discription {
 .acquaintance__container {
     padding-top: 120px;
     padding-bottom: 120px;
-    background: url(../img/acquaintance-bg.png) center / contain no-repeat;
+    background: url(../img/acquaintance-bg.png) center / cover no-repeat;
     border-radius: 10px;
 }
 
@@ -1419,7 +1419,7 @@ header .discription {
 
 .news__item {
     position: relative;
-    height: 360px;
+    min-height: 360px;
     border-radius: 10px;
 }
 
@@ -1431,10 +1431,10 @@ header .discription {
 }
 
 .news__content {
-    z-index: 1;
+    /* z-index: 1;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     height: 100%;
     padding: 50px 25px;
@@ -2785,6 +2785,7 @@ address::before {
     gap: 10px;
     align-items: center;
     margin-bottom: 10px;
+    overflow-x: auto;
 }
 
 .instruments__btn {
@@ -2802,6 +2803,7 @@ address::before {
     border-radius: 10px;
     background: var(--grey);
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .instruments__btn:nth-child(1)::before {
@@ -3754,4 +3756,8 @@ address::before {
 
 .ui-accordion .ui-accordion-header:hover {
     color: var(--color-hover);
+}
+
+.table-overflow {
+    overflow-x: auto;
 }
