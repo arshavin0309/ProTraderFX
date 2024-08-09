@@ -1782,6 +1782,14 @@ footer .copyright {
     justify-content: start;
 }
 
+.choice__item:hover h3,
+.choice__item:hover p {
+    animation-name: content;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
 .choice h3 {
     color: var(--white);
 }
@@ -1848,7 +1856,26 @@ footer .copyright {
 
 .responsibility__box.active {
     display: flex;
+
+    animation-name: content;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes content {
+    from {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
 
 .responsibility__box p:not(:last-child) {
     margin-bottom: 10px;
@@ -3514,24 +3541,87 @@ address::before {
     margin-top: 0;
 }
 
-
-
-
-
-
-
-
-
-details {
-    /* Set a max-height value just enough to show the summary */
-    max-height: 15rem;
-    /* Hide the rest of the content */
-    overflow: hidden;
-    /* Animate the change */
-    transition: max-height 400ms ease-out;
+.ui-accordion .ui-accordion-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    transition: var(--transition);
+    font-size: 24px;
+    line-height: 105%;
+    font-weight: 500;
 }
 
-input:checked + details,
-details:has(input:checked) {
-    max-height: 576px; /* Set a max-height value enough to show all the content */
+.ui-accordion .ui-accordion-header div {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    width: 100%;
+    padding: 15px 25px;
+    background: var(--grey);
+    border-radius: 10px;
+    transition: var(--transition);
+    width: 100%;
+    min-height: 60px;
+}
+
+.ui-accordion .ui-accordion-header:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.ui-accordion-header-icon {
+    display: none;
+}
+
+.ui-accordion .ui-accordion-header:hover::before {
+    background: url(../img/plus-hover.svg) var(--grey) center / 20px no-repeat;
+}
+
+.ui-accordion .ui-accordion-header::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    flex: 0 0 auto;
+    background: url(../img/plus.svg) var(--grey) center / 20px no-repeat;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.ui-accordion .ui-accordion-header:hover h3 {
+    color: var(--color-hover);
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.ui-accordion .ui-accordion-header.ui-accordion-header-active.ui-state-active div {
+    background: var(--grey-dark);
+    color: var(--black);
+}
+
+.ui-accordion .ui-accordion-header.ui-accordion-header-active.ui-state-active::before {
+    background: url(../img/minus.svg) var(--grey-dark) center / 30px no-repeat;
+}
+
+.ui-accordion .ui-accordion-content p {
+    margin-bottom: 15px;
+}
+
+.ui-accordion .ui-accordion-content ul {
+    margin-bottom: 15px;
+}
+
+.ui-accordion .ui-accordion-content li {
+    list-style: inside;
+}
+
+.ui-accordion .ui-accordion-header:hover {
+    color: var(--color-hover);
 }

@@ -197,4 +197,12 @@ document.addEventListener('DOMContentLoaded', () => {
             instrumentsTable[i].classList.add('active');
         });
     };
+
+    $(function () {
+        $("#accordion").accordion({
+            active: false,
+            collapsible: true,
+            heightStyle: "content"
+        });
+    });
 });

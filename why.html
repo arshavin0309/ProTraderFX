@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Почему ProTraderFX?</title>
 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -123,30 +127,42 @@
                     <a href="#" class="btn btn--black">Зарегистрироваться</a>
                 </div>
                 <div class="faq__right">
-                    <details>
-                        <summary><h3>ProTraderFX&nbsp;&mdash; это брокер?</h3></summary>
-                        <p class="text1">Да, ProTraderFX&nbsp;&mdash; это брокер, который предоставляет возможность торговать инструментами Форекс и&nbsp;CFD на&nbsp;индексы, металлы, энергоносители, акции и&nbsp;облигации, а&nbsp;также инвестировать в&nbsp;акции.</p>
-                    </details>
-                    
-                    <details>
-                        <summary><h3>Чем я&nbsp;могу торговать в&nbsp;ProTraderFX?</h3></summary>
-                        <p class="text1">Вы&nbsp;можете торговать и&nbsp;инвестировать в&nbsp;тысячи финансовых инструментов. Торгуйте на&nbsp;валютными парами Форекс, CFD на&nbsp;индексы, CFD на&nbsp;акции, CFD на&nbsp;облигации и&nbsp;CFD на&nbsp;сырьевые товары. Кроме того, Вы&nbsp;можете торговать самыми популярными валютными парами EURUSD, GBPUSD, USDCHF и&nbsp;USDJPY. Предпочитаете торговать CFD на&nbsp;ETF или индексы, такие как CAC40? У&nbsp;нас есть и&nbsp;это!</p>
-                    </details>
-                    
-                    <details>
-                        <summary><h3>Могу&nbsp;ли я&nbsp;инвестировать в&nbsp;акции с&nbsp;ProTraderFX?</h3></summary>
-                        <p class="text1">Да, вы&nbsp;можете инвестировать в&nbsp;акции с&nbsp;ProTraderFX. Мы&nbsp;предлагаем широкий выбор самых популярных акций на&nbsp;мировых фондовых рынках. Инвестируйте в&nbsp;акции технологического, финансового, энергетического, сырьевого и&nbsp;многих других секторов. В&nbsp;дополнение к&nbsp;инвестициям мы&nbsp;предоставляем ежедневные новости и&nbsp;анализ отдельных акций и&nbsp;мировых индексов.</p>
-                    </details>
-                    
-                    <details>
-                        <summary><h3>Как работает служба поддержки клиентов ProTraderFX?</h3></summary>
-                        <p class="text1">Служба поддержки ProTraderFX обслуживает клиентов по&nbsp;всему миру на&nbsp;их&nbsp;местных языках. Онлайн-чат есть внутри личного Dashboard каждого клиента, чтобы тот мог получать мгновенные ответы на&nbsp;свои вопросы от&nbsp;специалистов поддержки</p>
-                    </details>
-                    
-                    <details>
-                        <summary><h3>Какие брокерские лицензии есть у&nbsp;ProTraderFX?</h3></summary>
-                        <p class="text1">ProTraderFX обладает лицензиями Великобритании, Кипра, Южной Африки, Австралии, Иордании и&nbsp;Эстонии. Мы&nbsp;делаем все для соблюдения финансового законодательства и&nbsp;прилагаем значительные усилия для обеспечения спокойствия наших клиентов за&nbsp;счет нашей прозрачности, быстрого реагирования на&nbsp;вопросы и&nbsp;справедливых условий торговли и&nbsp;инвестирования.</p>
-                    </details>
+                    <div id="accordion">
+                        <h3>
+                            <div>ProTraderFX&nbsp;&mdash; это брокер?</div>
+                        </h3>
+                        <div>
+                            <p class="text1">Да, ProTraderFX&nbsp;&mdash; это брокер, который предоставляет возможность торговать инструментами Форекс и&nbsp;CFD на&nbsp;индексы, металлы, энергоносители, акции и&nbsp;облигации, а&nbsp;также инвестировать в&nbsp;акции.</p>
+                        </div>
+
+                        <h3>
+                            <div>Чем я&nbsp;могу торговать в&nbsp;ProTraderFX?</div>
+                        </h3>
+                        <div>
+                            <p class="text1">Вы&nbsp;можете торговать и&nbsp;инвестировать в&nbsp;тысячи финансовых инструментов. Торгуйте на&nbsp;валютными парами Форекс, CFD на&nbsp;индексы, CFD на&nbsp;акции, CFD на&nbsp;облигации и&nbsp;CFD на&nbsp;сырьевые товары. Кроме того, Вы&nbsp;можете торговать самыми популярными валютными парами EURUSD, GBPUSD, USDCHF и&nbsp;USDJPY. Предпочитаете торговать CFD на&nbsp;ETF или индексы, такие как CAC40? У&nbsp;нас есть и&nbsp;это!</p>
+                        </div>
+
+                        <h3>
+                            <div>Могу&nbsp;ли я&nbsp;инвестировать в&nbsp;акции с&nbsp;ProTraderFX?</div>
+                        </h3>
+                        <div>
+                            <p class="text1">Да, вы&nbsp;можете инвестировать в&nbsp;акции с&nbsp;ProTraderFX. Мы&nbsp;предлагаем широкий выбор самых популярных акций на&nbsp;мировых фондовых рынках. Инвестируйте в&nbsp;акции технологического, финансового, энергетического, сырьевого и&nbsp;многих других секторов. В&nbsp;дополнение к&nbsp;инвестициям мы&nbsp;предоставляем ежедневные новости и&nbsp;анализ отдельных акций и&nbsp;мировых индексов.</p>
+                        </div>
+
+                        <h3>
+                            <div>Как работает служба поддержки клиентов ProTraderFX?</div>
+                        </h3>
+                        <div>
+                            <p class="text1">Служба поддержки ProTraderFX обслуживает клиентов по&nbsp;всему миру на&nbsp;их&nbsp;местных языках. Онлайн-чат есть внутри личного Dashboard каждого клиента, чтобы тот мог получать мгновенные ответы на&nbsp;свои вопросы от&nbsp;специалистов поддержки</p>
+                        </div>
+
+                        <h3>
+                            <div>Какие брокерские лицензии есть у&nbsp;ProTraderFX?</div>
+                        </h3>
+                        <div>
+                            <p class="text1">ProTraderFX обладает лицензиями Великобритании, Кипра, Южной Африки, Австралии, Иордании и&nbsp;Эстонии. Мы&nbsp;делаем все для соблюдения финансового законодательства и&nbsp;прилагаем значительные усилия для обеспечения спокойствия наших клиентов за&nbsp;счет нашей прозрачности, быстрого реагирования на&nbsp;вопросы и&nbsp;справедливых условий торговли и&nbsp;инвестирования.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
