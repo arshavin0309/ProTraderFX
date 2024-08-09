@@ -1867,6 +1867,10 @@ footer .copyright {
     transition: var(--transition);
 }
 
+.responsibility__btn:first-child {
+    border-radius: 10px 0 0 0;
+}
+
 .responsibility__btn:hover {
     color: var(--color-hover);
 }
