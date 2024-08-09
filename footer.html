@@ -104,3 +104,19 @@
         </div>
     </div>
 </footer>
+
+<div class="cookies">
+    <p class="text2">Мы используем файлы cookie, чтобы больше узнать о том, как вы пользуетесь нашим сайтом, и что мы можем улучшить. <a href="">Подробнее</a></p>
+    <button class="btn btn--white cookies--close">Принять</button>
+</div>
+
+<script>
+    if (!getCookie('cookies')) {
+        document.querySelector('.cookies').style = 'display: flex'
+    }
+
+    document.querySelector('.cookies .btn').addEventListener('click', () => {
+        document.querySelector('.cookies').style = 'display: none'
+        setCookie('cookies', 'true', { 'max-age': 3600 * 24 * 365 })
+    })
+</script>

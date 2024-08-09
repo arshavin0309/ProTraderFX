@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiper2 = new Swiper(".swiper-2", {
 
         autoplay: {
-            delay: 1750,
+            delay: 3000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
@@ -109,20 +109,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Табы
-    let assetsBtn = document.querySelectorAll('.assets__btn');
-    let assetsBox = document.querySelectorAll('.assets__box');
+    // let assetsBtn = document.querySelectorAll('.assets__btn');
+    // let assetsBox = document.querySelectorAll('.assets__box');
 
-    for (let i = 0; i < assetsBtn.length; i++) {
-        assetsBtn[i].addEventListener('click', () => {
-            for (let n = 0; n < assetsBtn.length; n++) {
-                assetsBtn[n].classList.remove('active');
-                assetsBox[n].classList.remove('active');
-            };
+    // for (let i = 0; i < assetsBtn.length; i++) {
+    //     assetsBtn[i].addEventListener('click', () => {
+    //         for (let n = 0; n < assetsBtn.length; n++) {
+    //             assetsBtn[n].classList.remove('active');
+    //             assetsBox[n].classList.remove('active');
+    //         };
 
-            assetsBtn[i].classList.add('active');
-            assetsBox[i].classList.add('active');
-        });
-    };
+    //         assetsBtn[i].classList.add('active');
+    //         assetsBox[i].classList.add('active');
+    //     });
+    // };
 
     let responsibilityBtn = document.querySelectorAll('.responsibility__btn');
     let responsibilityBox = document.querySelectorAll('.responsibility__box');
@@ -211,5 +211,41 @@ document.addEventListener('DOMContentLoaded', () => {
         tableOverflow.className = "table-overflow";
         table.parentElement.replaceChild(tableOverflow, table);
         tableOverflow.appendChild(table);
+    }
+
+    // окно с предупреждением о куки
+    function getCookie(name) {
+        let matches = document.cookie.match(
+            new RegExp(
+                '(?:^|; )' +
+                name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') +
+                '=([^;]*)'
+            )
+        )
+        return matches ? decodeURIComponent(matches[1]) : undefined
+    }
+
+    function setCookie(name, value, options = {}) {
+        options = {
+            path: '/',
+            ...options,
+        }
+
+        if (options.expires instanceof Date) {
+            options.expires = options.expires.toUTCString()
+        }
+
+        let updatedCookie =
+            encodeURIComponent(name) + '=' + encodeURIComponent(value)
+
+        for (let optionKey in options) {
+            updatedCookie += '; ' + optionKey
+            let optionValue = options[optionKey]
+            if (optionValue !== true) {
+                updatedCookie += '=' + optionValue
+            }
+        }
+
+        document.cookie = updatedCookie
     }
 });

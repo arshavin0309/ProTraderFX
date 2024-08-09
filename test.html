@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовая страница</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script defer src="/js/script.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="header.html"></div>
+
+    <main>
+        <section>
+            <div class="container">
+
+                <!-- <div class="swiper swiper-3">
+                    <div class="swiper-wrapper">
+                        <div class="assets__buttons">
+                            <div class="swiper-slide">
+                                <button class="assets__btn active">Валюта</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="assets__btn">Акции</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="assets__btn">Криптовалюты</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="assets__btn">Металлы</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="assets__btn">Индексы</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="assets__btn">Товары</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="swiper swiper-3">
+                    <div class="swiper-wrapper assets__buttons">
+                        <button class="swiper-slide assets__btn active">Валюта</button>
+                        <button class="swiper-slide assets__btn">Акции</button>
+                        <button class="swiper-slide assets__btn">Криптовалюты</button>
+                        <button class="swiper-slide assets__btn">Металлы</button>
+                        <button class="swiper-slide assets__btn">Индексы</button>
+                        <button class="swiper-slide assets__btn">Товары</button>
+                    </div>
+                </div>
+
+                <div class="swiper swiper-4">
+                    <div class="assets__boxes swiper-wrapper">
+
+                        
+                        <div class="swiper-slide assets__box active">
+                            <div class="assets__info">
+                                <h3>Более 30&nbsp;валютных пар</h3>
+                                <p class="text1">Надёжный доступ к&nbsp;торговле основными и&nbsp;экзотическими валютными парами</p>
+                                <a href="#" class="btn btn--black">Купить валюту</a>
+                            </div>
+
+                            <div class="assets__list assets__list--green assets__list--1">
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--EURUSD">EURUSD</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">1,08400&nbsp;$</div>
+                                        <div class="assets__percent">+0,09%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--GBPUSD">GBPUSD</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">1,2871&nbsp;$</div>
+                                        <div class="assets__percent">+0,18%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--USDJPY">USDJPY</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">161,57JPY</div>
+                                        <div class="assets__percent">-0,05%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide assets__box active assets__list--red assets__list--2">
+                            <div class="assets__info">
+                                <h3>47&nbsp;акций мировых брендов</h3>
+                                <p class="text1">Мировые бренды Apple, Google, IBM, Facebook, Microsoft и&nbsp;другие</p>
+                                <a href="#" class="btn btn--black">Купить акции</a>
+                            </div>
+
+                            <div class="assets__list">
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--NVIDIA">NVIDIA</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">127,40&nbsp;$</div>
+                                        <div class="assets__percent">-5,57%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--Alphabet-Inc">Alphabet Inc</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">185,57&nbsp;$</div>
+                                        <div class="assets__percent">-2,93%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--VALE-S-A">VALE S.A.</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">11,39&nbsp;$</div>
+                                        <div class="assets__percent">-0,70%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide assets__box active assets__list--pink assets__list--3">
+                            <div class="assets__info">
+                                <h3>55&nbsp;криптовалютных пар</h3>
+                                <p class="text1">Инвестируйте в&nbsp;Bitcoin, Dash, EOS, Ethereum и&nbsp;другие перспективные цифровые валюты</p>
+                                <a href="#" class="btn btn--black">Купить криптовалюту</a>
+                            </div>
+
+                            <div class="assets__list">
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--bitcoin">Биткоин</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">64&nbsp;675&nbsp;$</div>
+                                        <div class="assets__percent">+0,89%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--Ethereum">Эфириум</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">3&nbsp;422,5&nbsp;$</div>
+                                        <div class="assets__percent">+1,03%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--Market-Cap-SHIB">Market Cap SHIB</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">11,028&nbsp;B&nbsp;USD</div>
+                                        <div class="assets__percent">+0,51%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide assets__box active assets__list--blue assets__list--4">
+                            <div class="assets__info">
+                                <h3>Gold, Silver, Palladium&nbsp;и&nbsp;т.д.</h3>
+                                <p class="text1">Инвестиции в&nbsp;металлы&nbsp;— один из&nbsp;лучших способов обезопасить свой капитал от&nbsp;инфляции</p>
+                                <a href="#" class="btn btn--black">Купить металлы</a>
+                            </div>
+
+                            <div class="assets__list">
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--Silver">Cеребро</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">30,620USD / APZ</div>
+                                        <div class="assets__percent">+0,80%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--gold">Золото</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">502,5USD / APZ</div>
+                                        <div class="assets__percent">-0,09%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--Palladium">Палладий</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">956,0USD / APZ</div>
+                                        <div class="assets__percent">+0,19%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide assets__box active assets__list--green assets__list--5">
+                            <div class="assets__info">
+                                <h3>10&nbsp;ведущих мировых индексов</h3>
+                                <p class="text1">Известные индексы крупных стран (Dow&nbsp;Jones, DAX, RTS&nbsp;и&nbsp;т.д.)</p>
+                                <a href="#" class="btn btn--black">Купить индексы</a>
+                            </div>
+
+                            <div class="assets__list">
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--Moscow-Exchange">МосБиржа</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">2&nbsp;947,24&nbsp;₽</div>
+                                        <div class="assets__percent">+0,08%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--Nasdaq-100">Nasdaq 100</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">19&nbsp;799,14&nbsp;$</div>
+                                        <div class="assets__percent">-2,94%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--DJI">DJI</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">41&nbsp;198,09&nbsp;$</div>
+                                        <div class="assets__percent">+0,59%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide assets__box active assets__list--red assets__list--6">
+                            <div class="assets__info">
+                                <h3>8&nbsp;товарных офферов</h3>
+                                <p class="text1">Торгуйте инструментами на&nbsp;товары (нефть, газ, кофе, какао, сахар, кукуруза и&nbsp;т.д.)</p>
+                                <a href="#" class="btn btn--black">Купить товары</a>
+                            </div>
+
+                            <div class="assets__list">
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--WTI-Oil">Нефть WTI</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">81,89USD / BLL</div>
+                                        <div class="assets__percent">-1,16%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--Wheat">Wheat</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">542’0USX / BUA</div>
+                                        <div class="assets__percent">+0,51%</div>
+                                    </div>
+                                </div>
+
+                                <div class="assets__item">
+                                    <div class="assets__top">
+                                        <div class="assets__name assets__name--Cocoa">Cocoa</div>
+                                        <a href="#" class="btn-arrow-black"></a>
+                                    </div>
+                                    <div class="assets__bottom">
+                                        <div class="assets__number">7&nbsp;763USD / TNE</div>
+                                        <div class="assets__percent">-1,03%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    </div>
+                </div>
+
+                <!-- Swiper JS -->
+                <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".swiper-3", {
+                        loop: true,
+                        spaceBetween: 20,
+                        slidesPerView: 6,
+                        freeMode: true,
+                        watchSlidesProgress: true,
+                    });
+                    var swiper4 = new Swiper(".swiper-4", {
+                        loop: true,
+                        spaceBetween: 20,
+                        thumbs: {
+                            swiper: swiper,
+                        },
+                    });
+                </script>
+
+            </div>
+        </section>
+    </main>
+
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>
