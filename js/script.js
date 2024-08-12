@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    
+
     const swiper5 = new Swiper('.swiper-5', {
         loop: true,
 
@@ -207,11 +207,27 @@ document.addEventListener('DOMContentLoaded', () => {
         table.parentElement.replaceChild(tableOverflow, table);
         tableOverflow.appendChild(table);
     }
-    
+
     let headerBurger = document.querySelector('.header__burger');
     let headerMenu = document.querySelector('header .menu');
 
     headerBurger.addEventListener('click', () => {
+        
         headerMenu.classList.toggle('active');
+        let menuItem = document.querySelectorAll('header .menu.active .menu-item');
+        
+        for (let i = 0; i < menuItem.length; i++) {
+            menuItem[i].addEventListener('click', () => {
+                if (menuItem[i].classList.contains('active')) {
+                    menuItem[i].classList.remove('active');
+                } else {
+                    for (let n = 0; n < menuItem.length; n++) {
+                        menuItem[n].classList.remove('active');
+                    };
+
+                    menuItem[i].classList.add('active');
+                };
+            });
+        };
     });
 });
