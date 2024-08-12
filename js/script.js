@@ -49,18 +49,18 @@ document.addEventListener('DOMContentLoaded', () => {
             el: '.swiper-scrollbar',
         },
 
-        autoplay: {
-            delay: 1750,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
+        // autoplay: {
+        //     delay: 1750,
+        //     disableOnInteraction: false,
+        //     pauseOnMouseEnter: true,
+        // },
 
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 1.3,
                 spaceBetween: 20
             },
-            600: {
+            500: {
                 slidesPerView: 1.5,
                 spaceBetween: 20
             },
@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 spaceBetween: 20
             },
             1024: {
-                slidesPerView: 3,
+                slidesPerView: 2.5,
                 spaceBetween: 30
             },
-            1024: {
+            1200: {
                 slidesPerView: 3.5,
                 spaceBetween: 30
             },
@@ -106,6 +106,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 return '<span class="' + className + '">' + ('0' + (index + 1)) + "</span>";
             },
         },
+    });
+
+    
+    const swiper5 = new Swiper('.swiper-5', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 20
+            }
+        }
     });
 
     let responsibilityBtn = document.querySelectorAll('.responsibility__btn');

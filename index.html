@@ -148,7 +148,7 @@
                 <h2>Типы счётов</h2>
                 <p class="text1">Выберите подходящий для&nbsp;себя торговый счёт и&nbsp;начинайте зарабатывать</p>
 
-                <ul class="types__list">
+                <!-- <ul class="types__list">
                     <li class="types__item">
                         <h3>Базовый</h3>
                         <div class="types__price">250&nbsp;$–1000</div>
@@ -203,7 +203,75 @@
                             <li class="types__element">Индивидуальный бизнес-план</li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
+
+                <div class="swiper swiper-5">
+                    <div class="swiper-wrapper types__list">
+                        <div class="swiper-slide">
+                            <li class="types__item">
+                                <h3>Базовый</h3>
+                                <div class="types__price">250&nbsp;$–1000</div>
+                                <p class="text2">Минимальный депозит</p>
+                                <a href="#" class="btn btn--black">Открыть счёт</a>
+
+                                <ul class="types__advantages">
+                                    <li class="types__element">Поддержка 24/7</li>
+                                    <li class="types__element">Личный менеджер</li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="types__item">
+                                <h3>Комфортный</h3>
+                                <div class="types__price">1&nbsp;000&nbsp;$–10000</div>
+                                <p class="text2">Минимальный депозит</p>
+                                <a href="#" class="btn btn--black">Открыть счёт</a>
+
+                                <ul class="types__advantages">
+                                    <li class="types__element">Поддержка 24/7</li>
+                                    <li class="types__element">Личный менеджер</li>
+                                    <li class="types__element">Страхование счета</li>
+                                </ul>
+                            </li>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <li class="types__item">
+                                <h3>Прогрессивный</h3>
+                                <div class="types__price">10&nbsp;000&nbsp;$–50000</div>
+                                <p class="text2">Минимальный депозит</p>
+                                <a href="#" class="btn btn--black">Открыть счёт</a>
+
+                                <ul class="types__advantages">
+                                    <li class="types__element">Поддержка 24/7</li>
+                                    <li class="types__element">Личный менеджер</li>
+                                    <li class="types__element">Страхование счета</li>
+                                    <li class="types__element">Коллективные сделки</li>
+                                </ul>
+                            </li>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <li class="types__item">
+                                <h3>Премиум</h3>
+                                <div class="types__price">50&nbsp;000&nbsp;$+</div>
+                                <p class="text2">Минимальный депозит</p>
+                                <a href="#" class="btn btn--black">Открыть счёт</a>
+
+                                <ul class="types__advantages">
+                                    <li class="types__element">Поддержка 24/7</li>
+                                    <li class="types__element">Личный менеджер</li>
+                                    <li class="types__element">Страхование счета</li>
+                                    <li class="types__element">Коллективные сделки</li>
+                                    <li class="types__element">Доступ к&nbsp;закрытым информационным ресурсам</li>
+                                    <li class="types__element">Индивидуальный бизнес-план</li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
 
@@ -524,6 +592,29 @@
                         slidesPerView: 6,
                         freeMode: true,
                         watchSlidesProgress: true,
+
+                        breakpoints: {
+                            320: {
+                                slidesPerView: 1.5,
+                                spaceBetween: 20
+                            },
+                            500: {
+                                slidesPerView: 2.5,
+                                spaceBetween: 20
+                            },
+                            700: {
+                                slidesPerView: 3.5,
+                                spaceBetween: 20
+                            },
+                            900: {
+                                slidesPerView: 4.5,
+                                spaceBetween: 20
+                            },
+                            1100: {
+                                slidesPerView: 6,
+                                spaceBetween: 20
+                            }
+                        }
                     });
                     var swiper4 = new Swiper(".swiper-4", {
                         loop: true,
@@ -533,7 +624,6 @@
                         },
                     });
                 </script>
-            </div>
             </div>
         </section>
 

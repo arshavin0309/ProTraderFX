@@ -1,0 +1,11 @@
+@media (max-width: 992px) {
+    footer .container {
+        grid-template-columns: 1fr;
+    }
+
+    footer .menu {
+        grid-row: initial;
+        grid-column: initial;
+        gap: 30px;
+    }
+}

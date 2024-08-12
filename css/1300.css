@@ -1,0 +1,47 @@
+@media (max-width: 1300px) {
+    .acquaintance__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        gap: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    .acquaintance__item:nth-child(1) {
+        width: 100%;
+        position: relative;
+        top: initial;
+        left: initial;
+        right: initial;
+        bottom: initial;
+    }
+
+
+    .acquaintance__item:nth-child(2) {
+        width: 100%;
+        position: relative;
+        top: initial;
+        left: initial;
+        right: initial;
+        bottom: initial;
+    }
+
+    .acquaintance__item:nth-child(3) {
+        width: 100%;
+        position: relative;
+        top: initial;
+        left: initial;
+        right: initial;
+        bottom: initial;
+    }
+
+    .acquaintance__item:nth-child(4) {
+        width: 100%;
+        position: relative;
+        top: initial;
+        left: initial;
+        right: initial;
+        bottom: initial;
+    }
+}

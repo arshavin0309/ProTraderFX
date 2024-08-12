@@ -18,4 +18,16 @@
         margin-left: -15px;
         margin-right: -15px;
     }
+
+    .header__logo {
+        max-width: 140px;
+    }
+
+    footer .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__logo {
+        max-width: 200px;
+    }
 }
