@@ -2068,7 +2068,6 @@ details .attention {
     grid-template-columns: 1fr 385px;
     gap: 45px;
     margin-top: 90px;
-    margin-bottom: 120px;
 }
 
 .documents__box {
@@ -3530,6 +3529,7 @@ address::before {
 
 .cookies p {
     font-size: 16px;
+    color: var(--white);
 }
 
 .cookies a {

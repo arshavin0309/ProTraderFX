@@ -40,4 +40,14 @@
         padding: 80px 15px 180px 15px;
         background: url(../img/analitics-image.svg) var(--grey) center bottom -10px / 100% 130px no-repeat;
     }
+
+    .documents__item::after {
+        display: none;
+    }
+
+    .documents__box {
+        gap: 35px;
+        flex-direction: column;
+        height: auto;
+    }
 }

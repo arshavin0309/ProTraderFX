@@ -71,4 +71,29 @@
         border-radius: 0;
         padding: 130px 15px 80px 15px;
     }
+
+    .hero-with-arrow {
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+    .hero-with-arrow__content h1,
+    .hero-with-arrow__content p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hero-with-arrow__content {
+        margin-left: -15px;
+        margin-right: -15px;
+        border-radius: 0;
+    }
+
+    .documents .container {
+        grid-template-columns: 1fr;
+    }
+
+    .documents__banner {
+        display: none;
+    }
 }
