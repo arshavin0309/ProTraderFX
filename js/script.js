@@ -212,21 +212,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let headerMenu = document.querySelector('header .menu');
 
     headerBurger.addEventListener('click', () => {
-        
         headerMenu.classList.toggle('active');
         let menuItem = document.querySelectorAll('header .menu.active .menu-item');
         
         for (let i = 0; i < menuItem.length; i++) {
             menuItem[i].addEventListener('click', () => {
-                if (menuItem[i].classList.contains('active')) {
-                    menuItem[i].classList.remove('active');
-                } else {
-                    for (let n = 0; n < menuItem.length; n++) {
-                        menuItem[n].classList.remove('active');
-                    };
-
-                    menuItem[i].classList.add('active');
+                for (let n = 0; n < menuItem.length; n++) {
+                    menuItem[n].classList.remove('active');
                 };
+
+                menuItem[i].classList.add('active');
             });
         };
     });
