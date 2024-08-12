@@ -47,19 +47,4 @@
     footer {
         margin-top: 80px;
     }
-
-    .assets__box {
-        padding: 50px 15px 15px 15px;
-    }
-
-    .assets__list {
-        grid-template-columns: 1fr;
-        margin-bottom: -15px;
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-
-    .assets__item:not(:first-child) {
-        display: none;
-    }
 }
