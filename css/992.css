@@ -219,4 +219,22 @@
     .banner__container::after {
         height: 50%;
     }
+
+    .contacts {
+        background: var(--grey);
+    }
+
+    .contacts .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .contacts__left {
+        padding: 0;
+    }
+
+    .contacts__right {
+        padding: 0;
+    }
 }

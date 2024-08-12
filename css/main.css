@@ -2148,6 +2148,7 @@ details .attention {
 }
 
 input {
+    display: block;
     width: 100%;
     max-width: 360px;
     padding: 17px 16px;
