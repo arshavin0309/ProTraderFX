@@ -212,9 +212,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let headerMenu = document.querySelector('header .menu');
 
     headerBurger.addEventListener('click', () => {
+        let menuItems = document.querySelectorAll('header .menu .menu-item')
+
+        for (let m = 0; m < menuItems.length; m++) {
+            menuItems[m].classList.remove('active')
+        }
+
         headerMenu.classList.toggle('active');
         let menuItem = document.querySelectorAll('header .menu.active .menu-item');
-        
+
         for (let i = 0; i < menuItem.length; i++) {
             menuItem[i].addEventListener('click', () => {
                 for (let n = 0; n < menuItem.length; n++) {
