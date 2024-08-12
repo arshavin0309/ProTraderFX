@@ -30,4 +30,14 @@
     .footer__logo {
         max-width: 200px;
     }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .analitics__container {
+        padding: 80px 15px 180px 15px;
+        background: url(../img/analitics-image.svg) var(--grey) center bottom -10px / 100% 130px no-repeat;
+    }
 }

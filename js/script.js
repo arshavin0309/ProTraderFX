@@ -207,4 +207,11 @@ document.addEventListener('DOMContentLoaded', () => {
         table.parentElement.replaceChild(tableOverflow, table);
         tableOverflow.appendChild(table);
     }
+    
+    let headerBurger = document.querySelector('.header__burger');
+    let headerMenu = document.querySelector('header .menu');
+
+    headerBurger.addEventListener('click', () => {
+        headerMenu.classList.toggle('active');
+    });
 });

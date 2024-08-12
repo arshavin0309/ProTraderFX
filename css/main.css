@@ -1488,20 +1488,21 @@ header .discription {
     gap: 20px;
     padding: 100px 30px;
     border-radius: 10px;
-    background: var(--grey);
+    background: url(../img/analitics-image.svg) var(--grey) right 30px bottom -10px / 50% no-repeat;
 }
 
-.analitics__container:after {
+/* .analitics__container:after {
     position: absolute;
     content: '';
     display: block;
-    width: calc(100% - 45px);
+    width: calc(100% - 45px - 45%);
     height: calc(100% - 65px + 7px);
     top: 65px;
+    left: 45%;
     right: 45px;
     bottom: -7px;
     background: url(../img/analitics-image.svg) right bottom / contain no-repeat;
-}
+} */
 
 .analitics__content {
     z-index: 1;
@@ -1703,7 +1704,8 @@ footer .copyright {
 .error h1 {
     margin-bottom: 25px;
     font-size: 128px;
-    line-height: 100%;
+    font-size: clamp(28px, 10vw, 128px);
+    line-height: 100%;  
     color: var(--white);
 }
 

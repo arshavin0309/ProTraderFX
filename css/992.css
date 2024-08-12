@@ -26,7 +26,7 @@
     .assets__item:not(:first-child) {
         display: none;
     }
-
+    
     .assets__list--1::before {
         width: 140px;
         height: 210px;
@@ -152,5 +152,71 @@
 
     .assets__box:nth-child(6) {
         background: url(../img/assets-box-bg-mobile-6.png) var(--grey) right bottom / contain no-repeat;
+    }
+
+    .cards__item {
+        padding: 15px;
+    }
+
+    .cards__box {
+        justify-content: space-between;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+
+    .cards__item img {
+        margin-top: 10px;
+    }
+
+    .cards {
+        margin-top: 10px;
+    }
+
+    .hero {
+        margin-bottom: 10px;
+    }
+
+    .right-choice h2 {
+        margin-bottom: 50px;
+    }
+
+    .right-choice__list {
+        gap: 35px;
+    }
+
+    .types .text1 {
+        margin-bottom: 25px;
+    }
+
+    .assets h2+.text1 {
+        margin-bottom: 30px;
+    }
+
+    .assets__btn {
+        padding: 7px;
+    }
+
+    .swiper-3 {
+        padding-bottom: 20px;
+    }
+
+    .news h2 {
+        margin-bottom: 30px;
+    }
+
+    .news__list {
+        gap: 15px;
+    }
+
+    .news__content {
+        padding: 20px 15px;
+    }
+    
+    .banner__container::before {
+        height: 50%;
+    }
+
+    .banner__container::after {
+        height: 50%;
     }
 }

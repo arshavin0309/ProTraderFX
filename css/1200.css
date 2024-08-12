@@ -44,7 +44,31 @@
         border-radius: 0;
     }
 
-    footer {
-        margin-top: 80px;
+    .banner__container::before {
+        /* height: 50%; */
+        background: url(../img/usa-mobile.png) left top / contain no-repeat;
+    }
+
+    .banner__container::after {
+        /* height: 50%; */
+        top: auto;
+        bottom: 0;
+        background: url(../img/europe-mobile.png) right bottom / contain no-repeat;
+    }
+
+    .banner__content {
+        padding: 70px 15px 115px 15px;
+    }
+
+    .error {
+        margin-top: 0;
+    }
+
+    .error__container {
+        margin-top: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        border-radius: 0;
+        padding: 130px 15px 80px 15px;
     }
 }
