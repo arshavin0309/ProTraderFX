@@ -278,4 +278,57 @@
     .start h2 {
         margin-bottom: 30px;
     }
+
+    .awards {
+        margin-top: 20px;
+    }
+
+    .safety h2 {
+        margin-bottom: 30px;
+    }
+
+    .safety--1 {
+        margin-bottom: 80px;
+    }
+
+    .average-time .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .average-time {
+        margin-bottom: 0;
+    }
+
+    .about-page .banner {
+        margin-top: 0;
+    }
+
+    .choice {
+        margin-bottom: 80px;
+    }
+
+    .choice h2 {
+        margin-bottom: 30px;
+    }
+
+    .responsibility h2 {
+        margin-bottom: 30px;
+    }
+
+    .faq .container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq .btn {
+        display: none;
+    }
+
+    .faq h2+p {
+        margin-bottom: 0;
+    }
+
+    .responsibility {
+        margin-bottom: 80px;
+    }
 }

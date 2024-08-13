@@ -310,4 +310,25 @@
     .popular-methods__box {
         padding: 50px 25px;
     }
+
+    .choice__list {
+        grid-template-columns: 1fr;
+    }
+
+    .choice__item {
+        height: 250px;
+    }
+
+    .responsibility__btns {
+        display: block;
+    }
+
+    .responsibility__btns {
+        display: none;
+    }
+
+    .responsibility__content {
+        height: auto;
+        grid-template-columns: 1fr;
+    }
 }

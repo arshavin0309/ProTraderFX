@@ -152,22 +152,6 @@
         color: var(--color-hover);
     }
 
-    .choice__item:hover {
-        justify-content: start;
-    }
-    
-    .choice__item:hover h3,
-    .choice__item:hover p {
-        animation-name: content;
-        animation-duration: .4s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
-    }
-
-    .choice__item:hover p {
-        display: block;
-    }
-
     .responsibility__btn:hover {
         color: var(--color-hover);
     }

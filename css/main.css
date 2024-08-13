@@ -1994,6 +1994,7 @@ details .attention {
     display: grid;
     grid-template-columns: 50% 1fr;
     gap: 30px;
+    align-items: start;
 }
 
 .safety h2 {
@@ -3588,18 +3589,21 @@ address::before {
 
 .swiper-5 .swiper-pagination {
     display: none;
+}
+
+.swiper-pagination {
     position: initial;
     margin-top: 25px;
 }
 
-.swiper-5 .swiper-pagination-bullet {
+.swiper-pagination-bullet {
     width: 10px;
     height: 10px;
     background: var(--grey-dark);
     opacity: initial;
 }
 
-.swiper-5 .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
     background: var(--color-hover);
 }
 
@@ -3608,5 +3612,25 @@ address::before {
 }
 
 .awards__list--mobile {
+    display: none;
+}
+
+.choice__item:hover {
+    justify-content: start;
+}
+    
+.choice__item:hover h3,
+.choice__item:hover p {
+    animation-name: content;
+    animation-duration: .4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.choice__item:hover p {
+    display: block;
+}
+
+.responsibility__btns {
     display: none;
 }

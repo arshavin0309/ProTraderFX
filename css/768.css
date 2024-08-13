@@ -97,4 +97,12 @@
         padding-bottom: 205px;
         background: url(../img/trading-platform-item-3.png) var(--grey) center bottom / 220px 180px no-repeat;
     }
+
+    .safety .container {
+        grid-template-columns: 1fr;
+    }
+
+    .safety__img {
+        order: 1;
+    }
 }
