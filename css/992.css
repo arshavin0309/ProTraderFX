@@ -281,10 +281,6 @@
         height: 50px;
     }
 
-    .recommendations__box {
-        gap: 15px;
-    }
-
     .news-page__container {
         grid-template-columns: 1fr;
     }
@@ -334,5 +330,14 @@
 
     .responsibility__box {
         padding: 20px 15px;
+    }
+
+    .ui-accordion .ui-accordion-header:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .basic-postulates__list {
+        gap: 15px;
+        grid-template-columns: 1fr;
     }
 }

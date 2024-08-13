@@ -25,6 +25,31 @@
         border-radius: 0;
     }
 
+    header .menu .menu-item a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    header .menu .menu-item a::after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        flex: 0 0 auto;
+        background: url(../img/arrow-down-2.svg) center / contain no-repeat;
+        transition: var(--transition);
+    }
+
+    header .menu .sub-menu .menu-item a::after {
+        display: none;
+    }
+
+    header .menu .menu-item.active a::after {
+        transform: rotate(180deg);
+    }
+
     header .menu.active .sub-menu .menu-item a {
         padding-left: 20px;
         border-bottom: 1px solid var(--grey);
@@ -99,6 +124,11 @@
 
     .recommendations__box {
         grid-template-columns: 1fr 2fr;
+        gap: 30px;
+    }
+
+    .consider h2 {
+        margin-bottom: 0;
     }
 
     .recommendations__left {
@@ -330,5 +360,38 @@
 
     .responsibility {
         margin-bottom: 80px;
+    }
+
+    .methods {
+        padding-top: 100px;
+    }
+
+    .methods h2 {
+        margin-bottom: 30px;
+    }
+
+    .consider .btn {
+        display: none;
+    }
+
+    .instruments-box {
+        margin-top: 80px;
+    }
+
+    .instruments-box h2 {
+        margin-bottom: 30px;
+    }
+
+    .technical-analysis-page .consider {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .basic-postulates h2 {
+        margin-bottom: 30px;
+    }
+
+    header .menu-item::before {
+        display: none;
     }
 }
