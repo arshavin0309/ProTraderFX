@@ -80,4 +80,29 @@
             transform: translateX(0);
         }
     }
+
+    .recommendations__box {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .recommendations__left {
+        width: 290px;
+        height: 290px;
+    }
+
+    .advantages-and-disadvantages__list {
+        margin-bottom: 80px;
+    }
+
+    .for-what .container {
+        align-items: start;
+    }
+
+    .other-news h2 {
+        margin-bottom: 30px;
+    }
+
+    .other-news__list {
+        gap: 15px;
+    }
 }

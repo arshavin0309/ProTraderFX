@@ -32,4 +32,32 @@
     .right-choice__item:nth-child(4) h3 {
         margin-bottom: 0;
     }
+
+    .differences__box {
+        grid-template-columns: 1fr;
+    }
+
+    .differences__image img {
+        width: 100%;
+    }
+
+    .advantages-and-disadvantages__item {
+        padding: 20px 15px 15px;
+    }
+
+    .recommendations__box {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendations__left {
+        order: 1;
+    }
+
+    .for-what .container {
+        grid-template-columns: 1fr;
+    }
+
+    .for-what__image img {
+        width: 100%;
+    }
 }

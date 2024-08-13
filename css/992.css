@@ -237,4 +237,73 @@
     .contacts__right {
         padding: 0;
     }
+
+    .contacts__box {
+        display: none;
+    }
+
+    .contacts__box--mobile {
+        display: grid;
+        margin-bottom: 0;
+    }
+
+    input {
+        margin-bottom: 15px;
+    }
+
+    .hero-with-arrow {
+        margin-bottom: 100px;
+    }
+
+    .advantages-and-disadvantages {
+        margin-top: 80px;
+    }
+
+    .advantages-and-disadvantages .recommendations__right h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .ui-accordion .ui-accordion-header {
+        gap: 0;
+    }
+
+    .ui-accordion .ui-accordion-header div {
+        padding: 13px 63px 13px 16px;
+    }
+
+    .ui-accordion .ui-accordion-header::before {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+    }
+
+    .recommendations__box {
+        gap: 15px;
+    }
+
+    .news-page__container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-aside {
+        display: none;
+    }
+
+    .news-page__list {
+        gap: 15px;
+    }
+
+    .pagination {
+        margin-top: 30px;
+    }
+
+    .news-content__img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+    }
 }

@@ -86,6 +86,7 @@
     .hero-with-arrow__content {
         margin-left: -15px;
         margin-right: -15px;
+        padding-top: 120px;
         border-radius: 0;
     }
 
@@ -95,5 +96,15 @@
 
     .documents__banner {
         display: none;
+    }
+
+    .advantages-and-disadvantages {
+        margin-top: 80px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .for-what h2 {
+        margin-bottom: 30px;
     }
 }

@@ -54,4 +54,30 @@
     .contacts__submit-box {
         flex-direction: column;
     }
+
+    .contacts__box {
+        grid-template-columns: 1fr;
+    }
+
+    .advantages-and-disadvantages__list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .news-page__list {
+        grid-template-columns: 1fr;
+    }
+
+    .news-page__item:first-child {
+        grid-column: initial;
+    }
+
+    .news-content__copyright {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .news-content__copyright p.text1 {
+        margin: 0;
+    }
 }
