@@ -56,11 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const swiper2 = new Swiper(".swiper-2", {
 
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        //     pauseOnMouseEnter: true,
+        // },
 
         slidesPerView: 1,
         spaceBetween: 30,
@@ -100,6 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 spaceBetween: 20
             }
         }
+    });
+
+    const swiper6 = new Swiper('.swiper-6', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
     });
 
     let responsibilityBtn = document.querySelectorAll('.responsibility__btn');
@@ -197,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         };
     });
-    
+
     // окно с предупреждением о куки
     function getCookie(name) {
         let matches = document.cookie.match(

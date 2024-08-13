@@ -115,4 +115,39 @@
     .trading-platform__item:nth-child(2) {
         padding-left: 53%;
     }
+
+    .awards__list {
+        display: none;
+    }
+
+    .awards__item--1,
+    .awards__item--2,
+    .awards__item--3,
+    .awards__item--4,
+    .awards__item--5,
+    .awards__item--6 {
+        position: initial;
+        transform: none;
+        margin: auto;
+    }
+
+    .awards__box {
+        width: 100%;
+        padding: 0;
+        height: auto;
+        background: none;
+    }
+
+    .awards__list--mobile {
+        display: block;
+    }
+
+    .awards .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .awards {
+        background: url(../img/awards-mobile-bg.png) center / contain no-repeat;
+    }
 }

@@ -3606,3 +3606,7 @@ address::before {
 .footer__discription {
     font-size: clamp(12px, 3vw, 18px);
 }
+
+.awards__list--mobile {
+    display: none;
+}
