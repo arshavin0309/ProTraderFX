@@ -12,10 +12,23 @@
         align-items: start;
         z-index: -1;
         padding: 100px 10px;
+        gap: 0;
     }
 
     header .menu.active {
         top: 0;
+    }
+
+    header .menu.active .menu-item a {
+        padding: 10px;
+        border-bottom: 1px solid var(--black-with-opacity);
+        border-radius: 0;
+    }
+
+    header .menu.active .sub-menu .menu-item a {
+        padding-left: 20px;
+        border-bottom: 1px solid var(--grey);
+        background: var(--grey-dark);
     }
 
     header .btn.btn--black {
@@ -64,14 +77,17 @@
         display: flex;
         box-shadow: none;
         width: 100%;
+        padding: 0;
+        /* padding-left: 15px; */
+        gap: 0;
 
-        animation-name: show-submenu;
+        animation-name: show-sub-menu;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
         animation-timing-function: ease-in-out;
     }
 
-    @keyframes show-submenu {
+    @keyframes show-sub-menu {
         from {
             transform: translateX(-100vw);
         }
@@ -105,4 +121,109 @@
     .other-news__list {
         gap: 15px;
     }
+
+    .charts-online__box {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .charts-online__box div:nth-child(1) {
+        grid-row: initial;
+    }
+
+    .charts-online__box--2 {
+        display: none;
+    }
+
+    .charts-online__box--3 {
+        display: none;
+    }
+
+    .review-page .quotes h2+p {
+        margin-bottom: 25px;
+    }
+
+    .charts-online h2+p {
+        margin-bottom: 25px;
+    }
+
+    .widgets-box__item h2+p {
+        margin-bottom: 25px;
+    }
+
+    header .discription {
+        display: none;
+    }
+
+    .header__about {
+        background: none;
+    }
+
+    .header__why {
+        background: none;
+    }
+
+    .header__doc {
+        background: none;
+    }
+
+    .header__contact {
+        background: none;
+    }
+
+    .header__start {
+        background: none;
+    }
+
+    .header__platform {
+        background: none;
+    }
+
+    .header__investing {
+        background: none;
+    }
+
+    .header__specification {
+        background: none;
+    }
+
+    .header__deposit {
+        background: none;
+    }
+
+    .header__review {
+        background: none;
+    }
+
+    .header__news {
+        background: none;
+    }
+
+    .header__forecasts {
+        background: none;
+    }
+
+    .header__calendar {
+        background: none;
+    }
+
+    .header__basics {
+        background: none;
+    }
+
+    .header__fundamental-analysis {
+        background: none;
+    }
+
+    .header__technical-analysis {
+        background: none;
+    }
+
+    header .sub-menu .menu-item a {
+        padding-left: 15px;
+    }
+
 }
