@@ -273,6 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $('.responsibility__tab').on('click', function () {
         $('.responsibility__dropdown').slideToggle();
+        document.querySelector('.responsibility__tab').classList.toggle('active')
     });
 
     let partnersBtn = document.querySelector('.responsibility__tab');
@@ -294,6 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
             partnersItem[i].style = 'display: none';
 
             partnersBtn.innerHTML = partnersItem[i].innerHTML;
+            partnersBtn.classList.toggle('active')
             $('.responsibility__dropdown').slideToggle();
 
             for (let m = 0; m < partnersContainer.length; m++) {

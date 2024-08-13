@@ -3639,14 +3639,32 @@ address::before {
 }
 
 .responsibility__tab {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
     width: 100%;
     padding: 20px 15px;
+    padding-right: 45px;
     border: none;
     border-radius: 10px;
     text-align: left;
+}
+
+.responsibility__tab::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../img/arrow-down-2.svg) center / contain no-repeat;
+    transition: var(--transition);
+}
+
+.responsibility__tab.active::after {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .responsibility__item {
@@ -3664,4 +3682,10 @@ address::before {
 
 .responsibility__item:last-child {
     padding-bottom: 20px;
+}
+
+.responsibility__dropdown {
+    position: relative;
+    z-index: 1;
+    display: none;
 }
