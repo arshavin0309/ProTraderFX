@@ -262,4 +262,16 @@
         padding-right: 50%;
         background: url(../img/trading-platform-item-3.png) var(--grey) right bottom / 50% no-repeat;
     }
+
+    .trading-platform h2 {
+        margin-bottom: 30px;
+    }
+
+    .trading-advantages h2 {
+        margin-bottom: 50px;
+    }
+
+    .steps h2 {
+        margin-bottom: 30px;
+    }
 }

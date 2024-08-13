@@ -83,18 +83,18 @@
     .trading-platform__item:nth-child(1) {
         padding: 20px 15px;
         padding-bottom: 190px;
-        background: url(../img/trading-platform-item-1.png) var(--grey) center bottom / 155px no-repeat;
+        background: url(../img/trading-platform-item-1.png) var(--grey) center bottom / 200px 155px no-repeat;
     }
 
     .trading-platform__item:nth-child(2) {
         padding: 20px 15px;
         padding-bottom: 180px;
-        background: url(../img/trading-platform-item-2.png) var(--grey-dark) center bottom 20px / 130px no-repeat;
+        background: url(../img/trading-platform-item-2.png) var(--grey-dark) center bottom 20px / 250px 130px no-repeat;
     }
 
     .trading-platform__item:nth-child(3) {
         padding: 20px 15px;
         padding-bottom: 205px;
-        background: url(../img/trading-platform-item-3.png) var(--grey) center bottom / 180px no-repeat;
+        background: url(../img/trading-platform-item-3.png) var(--grey) center bottom / 220px 180px no-repeat;
     }
 }
