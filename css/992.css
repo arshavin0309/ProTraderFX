@@ -306,4 +306,8 @@
         max-height: 300px;
         object-fit: cover;
     }
+
+    .popular-methods__box {
+        padding: 50px 25px;
+    }
 }

@@ -2822,7 +2822,8 @@ address::before {
 }
 
 .popular-methods__content {
-    max-width: 590px;
+    /* max-width: 590px; */
+    max-width: 55%;
 }
 
 .popular-methods h3 {

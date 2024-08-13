@@ -107,4 +107,12 @@
     .for-what h2 {
         margin-bottom: 30px;
     }
+
+    .popular-methods__box {
+        background: url(../img/popular-methods-image.svg) var(--grey) right center / 30% no-repeat;
+    }
+
+    .trading-platform__item:nth-child(2) {
+        padding-left: 53%;
+    }
 }

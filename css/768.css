@@ -65,4 +65,36 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .popular-methods__box {
+        padding-bottom: 200px;
+        background: url(../img/popular-methods-image.svg) var(--grey) center bottom 20px / 100% 150px no-repeat;
+    }
+
+    .popular-methods__content {
+        max-width: 100%;
+    }
+
+    .trading-advantages__list {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .trading-platform__item:nth-child(1) {
+        padding: 20px 15px;
+        padding-bottom: 190px;
+        background: url(../img/trading-platform-item-1.png) var(--grey) center bottom / 155px no-repeat;
+    }
+
+    .trading-platform__item:nth-child(2) {
+        padding: 20px 15px;
+        padding-bottom: 180px;
+        background: url(../img/trading-platform-item-2.png) var(--grey-dark) center bottom 20px / 130px no-repeat;
+    }
+
+    .trading-platform__item:nth-child(3) {
+        padding: 20px 15px;
+        padding-bottom: 205px;
+        background: url(../img/trading-platform-item-3.png) var(--grey) center bottom / 180px no-repeat;
+    }
 }

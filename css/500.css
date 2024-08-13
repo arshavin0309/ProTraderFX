@@ -80,4 +80,9 @@
     .news-content__copyright p.text1 {
         margin: 0;
     }
+
+    .steps__item img {
+        width: 100%;
+        margin-left: auto;
+    }
 }

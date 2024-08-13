@@ -17,4 +17,9 @@
     .widgets-box__widget {
         width: 100%;
     }
+
+    .popular__box {
+        padding: 0;
+        background: none;
+    }
 }
