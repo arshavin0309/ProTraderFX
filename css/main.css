@@ -3631,6 +3631,37 @@ address::before {
     display: block;
 }
 
-.responsibility__btns {
+.responsibility__btns--mobile {
     display: none;
+    margin-bottom: 20px;
+    background: var(--grey);
+    border-radius: 10px;
+}
+
+.responsibility__tab {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.responsibility__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    text-align: left;
+    list-style: none;
+}
+
+.responsibility__item:first-child {
+    padding-top: 0;
+}
+
+.responsibility__item:last-child {
+    padding-bottom: 20px;
 }

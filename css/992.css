@@ -320,15 +320,19 @@
     }
 
     .responsibility__btns {
-        display: block;
+        display: none;
     }
 
-    .responsibility__btns {
-        display: none;
+    .responsibility__btns--mobile {
+        display: block;
     }
 
     .responsibility__content {
         height: auto;
         grid-template-columns: 1fr;
+    }
+
+    .responsibility__box {
+        padding: 20px 15px;
     }
 }
