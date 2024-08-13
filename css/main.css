@@ -1870,7 +1870,7 @@ details .attention {
 .awards {
     margin-top: 30px;
     margin-bottom: 0;
-    background: url(../img/awards-bg.png) center / contain no-repeat;
+    background: url(../img/awards-bg.png) center / 100% 100% no-repeat;
 }
 
 .awards .container {
