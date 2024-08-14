@@ -159,6 +159,7 @@
     }
 
     .assets__item {
+        height: auto;
         padding: 20px 15px;
     }
 

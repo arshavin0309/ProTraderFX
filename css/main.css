@@ -1124,6 +1124,8 @@ header .discription {
     display: flex;
     gap: 20px;
     align-items: center;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .assets__bottom {
