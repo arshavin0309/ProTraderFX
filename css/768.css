@@ -107,7 +107,7 @@
 
     .trading-platform__item:nth-child(1) {
         padding: 20px 15px;
-        padding-bottom: 190px;
+        padding-bottom: 170px;
         background: url(../img/trading-platform-item-1.png) var(--grey) center bottom / 200px 155px no-repeat;
     }
 
@@ -119,7 +119,7 @@
 
     .trading-platform__item:nth-child(3) {
         padding: 20px 15px;
-        padding-bottom: 205px;
+        padding-bottom: 200px;
         background: url(../img/trading-platform-item-3.png) var(--grey) center bottom / 220px 180px no-repeat;
     }
 
@@ -159,5 +159,13 @@
 
     .documents__box {
         padding: 20px 15px;
+    }
+
+    .instruments__buttons {
+        padding-bottom: 4px;
+    }
+
+    .instruments__btn {
+        padding: 10px 50px;
     }
 }

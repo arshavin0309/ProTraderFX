@@ -176,6 +176,14 @@
         margin-bottom: 25px;
     }
 
+    .quotes h2+p {
+        margin-bottom: 25px;
+    }
+
+    .forecasts h2+p {
+        margin-bottom: 30px;
+    }
+
     .charts-online h2+p {
         margin-bottom: 25px;
     }
@@ -393,5 +401,17 @@
 
     header .menu-item::before {
         display: none;
+    }
+
+    .recommendations h2 {
+        margin-bottom: 30px;
+    }
+
+    .instruments h2 {
+        margin-bottom: 30px;
+    }
+
+    .instruments__table th:first-child, .instruments__table td:first-child {
+        white-space: nowrap;
     }
 }
