@@ -20,16 +20,16 @@
         right: 0;
         bottom: 0;
         width: 100%;
-        grid-template-columns: 1fr;
-    }
-
-    .assets__item:not(:first-child) {
-        display: none;
+        padding: 20px 15px;
     }
     
     .assets__list--1::before {
-        width: 140px;
-        height: 210px;
+        min-width: 140px;
+        min-height: 210px;
+        max-width: 300px;
+        max-height: 380px;
+        width: 100vw;
+        height: 100vh;
         object-position: center bottom;
         top: auto;
         bottom: 120px;
@@ -37,40 +37,60 @@
     }
 
     .assets__list--2::before {
-        width: 190px;
-        height: 185px;
+        min-width: 190px;
+        min-height: 185px;
+        max-width: 300px;
+        max-height: 380px;
+        width: 100vw;
+        height: 100vh;
         top: initial;
-        bottom: 120px;
+        bottom: 90px;
         right: 0;
     }
 
     .assets__list--3::before {
-        width: 180px;
-        height: 210px;
+        min-width: 180px;
+        min-height: 210px;
+        max-width: 300px;
+        max-height: 380px;
+        width: 100vw;
+        height: 100vh;
         top: initial;
         bottom: 100px;
         right: 10px;
     }
 
     .assets__list--4::before {
-        width: 160px;
-        height: 200px;
+        min-width: 160px;
+        min-height: 200px;
+        max-width: 300px;
+        max-height: 380px;
+        width: 100vw;
+        height: 100vh;
         top: initial;
         bottom: 105px;
         right: 0;
     }
 
     .assets__list--5::before {
-        width: 135px;
-        height: 255px;
+        min-width: 135px;
+        min-height: 255px;
+        max-width: 300px;
+        max-height: 380px;
+        width: 100vw;
+        height: 100vh;
         top: initial;
         bottom: 60px;
         right: 15px;
     }
 
     .assets__list--6::before {
-        width: 180px;
-        height: 200px;
+        min-width: 180px;
+        min-height: 200px;
+        max-width: 300px;
+        max-height: 380px;
+        width: 100vw;
+        height: 100vh;
         top: initial;
         bottom: 110px;
         right: 0;

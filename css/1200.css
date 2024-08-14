@@ -191,4 +191,12 @@
         background: var(--grey);
         filter: blur(50px);
     }
+
+    .assets__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .assets__item:nth-child(3) {
+        display: none;
+    }
 }

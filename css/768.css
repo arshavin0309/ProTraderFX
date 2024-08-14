@@ -148,4 +148,12 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    .assets__item:nth-child(2) {
+        display: none;
+    }
+
+    .assets__list {
+        grid-template-columns: 1fr;
+    }
 }

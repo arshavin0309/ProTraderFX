@@ -132,7 +132,10 @@
         background: url(../img/start-box-mobile-6.png) var(--grey) center bottom / cover no-repeat;
     }
 
-    .swiper-2 .swiper-horizontal>.swiper-pagination-bullets, .swiper-2 .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-2 .swiper-pagination-custom, .swiper-2 .swiper-pagination-fraction {
+    .swiper-2 .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-2 .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-2 .swiper-pagination-custom,
+    .swiper-2 .swiper-pagination-fraction {
         position: absolute;
         left: 15px;
         bottom: 20px;
@@ -175,5 +178,44 @@
 
     .assets__name {
         gap: 10px;
+    }
+
+    h3,
+    .h3 {
+        line-height: 24px;
+    }
+
+    .assets__list {
+        padding: 0;
+    }
+    
+    .assets__list--1::before {
+        width: 140px;
+        height: 210px;
+    }
+
+    .assets__list--2::before {
+        width: 190px;
+        height: 185px;
+    }
+
+    .assets__list--3::before {
+        width: 180px;
+        height: 210px;
+    }
+
+    .assets__list--4::before {
+        width: 160px;
+        height: 200px;
+    }
+
+    .assets__list--5::before {
+        width: 135px;
+        height: 255px;
+    }
+
+    .assets__list--6::before {
+        width: 180px;
+        height: 200px;
     }
 }
