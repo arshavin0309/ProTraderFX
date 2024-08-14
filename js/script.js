@@ -203,22 +203,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         headerMenu.classList.toggle("active");
-        let menuItem = document.querySelectorAll("header .menu.active .menu-item");
 
-        for (let i = 0; i < menuItem.length; i++) {
-            menuItem[i].addEventListener("click", () => {
+        for (let i = 0; i < menuItems.length; i++) {
+            menuItems[i].addEventListener("click", () => {
 
-                if (menuItem[i].classList.contains("active")) {
-                    menuItem[i].classList.remove("active");
+                if (menuItems[i].classList.contains("active")) {
+                    menuItems[i].classList.remove("active");
 
                     console.log("есть класс");
                 } else {
-                    for (let n = 0; n < menuItem.length; n++) {
-                        menuItem[n].classList.remove("active");
+                    for (let n = 0; n < menuItems.length; n++) {
+                        menuItems[n].classList.remove("active");
                     }
 
                     console.log("нет класса");
-                    menuItem[i].classList.add("active");
+                    menuItems[i].classList.add("active");
                 }
             });
         }

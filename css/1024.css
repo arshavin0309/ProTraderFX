@@ -111,7 +111,7 @@
 
     header .menu.active .menu-item {
         animation-name: show-sub-menu;
-        animation-duration: 0.3s;
+        animation-duration: .3s;
         animation-iteration-count: 1;
         animation-timing-function: ease-in-out;
     }
