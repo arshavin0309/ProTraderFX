@@ -7,6 +7,10 @@
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 
+    .right-choice__item {
+        min-height: 110px;
+    }
+
     .right-choice__item:nth-child(1) {
         order: -6;
     }

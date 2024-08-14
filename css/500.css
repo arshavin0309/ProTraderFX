@@ -157,4 +157,22 @@
     .swiper-2 .swiper-pagination-bullet-active {
         color: var(--black);
     }
+
+    .assets__item {
+        padding: 20px 15px;
+    }
+
+    .assets__name--EURUSD::before,
+    .assets__name--bitcoin::before,
+    .assets__name--NVIDIA::before,
+    .assets__name--Silver::before,
+    .assets__name--Moscow-Exchange::before,
+    .assets__name--WTI-Oil::before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .assets__name {
+        gap: 10px;
+    }
 }
