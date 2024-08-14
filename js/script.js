@@ -31,10 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 spaceBetween: 20
             },
             768: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            900: {
                 slidesPerView: 2.5,
                 spaceBetween: 20
             },
@@ -56,11 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const swiper2 = new Swiper(".swiper-2", {
 
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: false,
-        //     pauseOnMouseEnter: true,
-        // },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
 
         slidesPerView: 1,
         spaceBetween: 30,

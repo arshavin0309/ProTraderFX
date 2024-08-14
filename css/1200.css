@@ -207,4 +207,9 @@
     .assets__item:nth-child(3) {
         display: none;
     }
+
+    .swiper-1 {
+        width: calc(100% + 15px);
+        margin-right: -15px;
+    }
 }
