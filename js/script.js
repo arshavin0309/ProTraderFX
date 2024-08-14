@@ -207,19 +207,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         for (let i = 0; i < menuItem.length; i++) {
             menuItem[i].addEventListener("click", () => {
+
                 if (menuItem[i].classList.contains("active")) {
                     menuItem[i].classList.remove("active");
 
                     console.log("есть класс");
                 } else {
+                    for (let n = 0; n < menuItem.length; n++) {
+                        menuItem[n].classList.remove("active");
+                    }
+
                     console.log("нет класса");
+                    menuItem[i].classList.add("active");
                 }
-
-                for (let n = 0; n < menuItem.length; n++) {
-                    menuItem[n].classList.remove("active");
-                }
-
-                menuItem[i].classList.add("active");
             });
         }
     });
