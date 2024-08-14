@@ -243,4 +243,34 @@
     .contacts__submit-box p {
         font-size: 12px;
     }
+
+    .popular-methods__box {
+        padding: 20px 15px;
+        padding-bottom: 200px;
+    }
+
+    .news-page__item:first-child h3 {
+        -webkit-line-clamp: 3;
+    }
+
+    .news-page__item p {
+        -webkit-line-clamp: 8;
+    }
+
+    .news-page__item:first-child .news-page__content {
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .news-page__content {
+        padding: 20px 15px;
+    }
+
+    .news-content__img {
+        height: 200px;
+    }
+
+    .basic-postulates__item {
+        padding: 20px 15px;
+    }
 }

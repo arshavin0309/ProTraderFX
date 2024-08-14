@@ -84,6 +84,8 @@
 
     .for-what__image img {
         width: 100%;
+        min-height: 255px;
+        object-fit: cover;
     }
 
     .widgets-box__box {
@@ -167,5 +169,13 @@
 
     .instruments__btn {
         padding: 10px 50px;
+    }
+
+    .advantages-and-disadvantages {
+        background: url(../img/advantages-and-disadvantages-image.png) center / cover no-repeat;
+    }
+
+    .technical-analysis-page .consider {
+        background: url(../img/instruments-bg.png) center / cover no-repeat;
     }
 }

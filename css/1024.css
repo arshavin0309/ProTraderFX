@@ -180,6 +180,10 @@
         margin-bottom: 25px;
     }
 
+    .pagination {
+        margin-top: 30px;
+    }
+
     .forecasts h2+p {
         margin-bottom: 30px;
     }
@@ -372,6 +376,7 @@
 
     .methods {
         padding-top: 100px;
+        padding-bottom: 80px;
     }
 
     .methods h2 {
@@ -413,5 +418,17 @@
 
     .instruments__table th:first-child, .instruments__table td:first-child {
         white-space: nowrap;
+    }
+
+    .advantages-of-trading h2 {
+        margin-bottom: 30px;
+    }
+
+    .differences h2 {
+        margin-bottom: 30px;
+    }
+
+    .advantages-and-disadvantages h2 {
+        margin-bottom: 30px;
     }
 }
