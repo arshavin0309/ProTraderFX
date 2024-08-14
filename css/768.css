@@ -7,14 +7,35 @@
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 
+    .right-choice__item:nth-child(1) {
+        order: -6;
+    }
+
+    .right-choice__item:nth-child(2) {
+        order: -4;
+    }
+
     .right-choice__item:nth-child(3) {
         grid-row: initial;
         grid-column: initial;
     }
 
     .right-choice__item:nth-child(4) {
+        order: -5;
         grid-row: initial;
         grid-column: initial;
+    }
+
+    .right-choice__item:nth-child(5) {
+        order: -2;
+    }
+
+    .right-choice__item:nth-child(6) {
+        order: -1;
+    }
+
+    .right-choice__item:nth-child(7) {
+        /* order: -2; */
     }
 
     .right-choice__item:nth-child(3)::after {
