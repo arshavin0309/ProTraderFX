@@ -178,4 +178,29 @@
     .technical-analysis-page .consider {
         background: url(../img/instruments-bg.png) center / cover no-repeat;
     }
+    
+    .banner__container::before {
+        height: 50%;
+    }
+
+    .banner__container::after {
+        height: 50%;
+    }
+
+    .banner-2 .banner__container::before {
+        background: url(../img/banner-2-left-mobile.png) left top / contain no-repeat;
+    }
+
+    .banner-2 .banner__container::after {
+        background: url(../img/banner-2-right-mobile.png) right bottom / contain no-repeat;
+    }
+
+    .banner__content::before {
+        left: -20px;
+        right: -20px;
+        width: 250vw;
+        top: 30%;
+        bottom: 30%;
+        height: calc(100% - 60%);
+    }
 }

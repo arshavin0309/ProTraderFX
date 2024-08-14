@@ -231,14 +231,6 @@
     .news__content {
         padding: 20px 15px;
     }
-    
-    .banner__container::before {
-        height: 50%;
-    }
-
-    .banner__container::after {
-        height: 50%;
-    }
 
     .contacts {
         background: var(--grey);

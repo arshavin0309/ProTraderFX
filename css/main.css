@@ -1396,6 +1396,7 @@ header .discription {
     position: relative;
     background: var(--grey-dark);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .banner__content {
@@ -2040,11 +2041,11 @@ details .attention {
 }
 
 .banner-3 .banner__container::before {
-    background: url(../img/banner-3-left.png) left center / contain no-repeat;
+    background: url(../img/banner-3-left.png) left top / contain no-repeat;
 }
 
 .banner-3 .banner__container::after {
-    background: url(../img/banner-3-right.png) right center / contain no-repeat;
+    background: url(../img/banner-3-right.png) right bottom / contain no-repeat;
 }
 
 * {
