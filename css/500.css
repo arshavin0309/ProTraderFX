@@ -94,4 +94,67 @@
     .awards {
         background: url(../img/awards-mobile-bg.png) center / 100% 100% no-repeat;
     }
+
+    .start__item {
+        padding: 30px 15px;
+        padding-bottom: 310px;
+    }
+
+    .start__box {
+        max-width: 100%;
+    }
+
+    /* .start__box::before {
+        display: none;
+    } */
+
+    .start__item:nth-child(1) {
+        background: url(../img/start-box-mobile-1.png) var(--grey) center bottom / cover no-repeat;
+    }
+
+    .start__item:nth-child(2) {
+        background: url(../img/start-box-mobile-2.png) var(--grey) center bottom / cover no-repeat;
+    }
+
+    .start__item:nth-child(3) {
+        background: url(../img/start-box-mobile-3.png) var(--grey) center bottom / cover no-repeat;
+    }
+
+    .start__item:nth-child(4) {
+        background: url(../img/start-box-mobile-4.png) var(--grey) center bottom / cover no-repeat;
+    }
+
+    .start__item:nth-child(5) {
+        background: url(../img/start-box-mobile-5.png) var(--grey) center bottom / cover no-repeat;
+    }
+
+    .start__item:nth-child(6) {
+        background: url(../img/start-box-mobile-6.png) var(--grey) center bottom / cover no-repeat;
+    }
+
+    .swiper-2 .swiper-horizontal>.swiper-pagination-bullets, .swiper-2 .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-2 .swiper-pagination-custom, .swiper-2 .swiper-pagination-fraction {
+        position: absolute;
+        left: 15px;
+        bottom: 20px;
+    }
+
+    /* .swiper-2 .swiper-pagination:before {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        top: -15px;
+        left: -15px;
+        width: calc(100% + 15px + 15px);
+        height: calc(100% + 15px + 15px);
+        background: var(--white);
+        filter: blur(50px);
+    } */
+
+    .swiper-2 .swiper-pagination-bullet {
+        color: #A6A6A6;
+    }
+
+    .swiper-2 .swiper-pagination-bullet-active {
+        color: var(--black);
+    }
 }

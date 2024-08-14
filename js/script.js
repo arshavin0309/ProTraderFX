@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
             el: '.swiper-scrollbar',
         },
 
-        // autoplay: {
-        //     delay: 1750,
-        //     disableOnInteraction: false,
-        //     pauseOnMouseEnter: true,
-        // },
+        autoplay: {
+            delay: 1750,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
 
         breakpoints: {
             320: {
