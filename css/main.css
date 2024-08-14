@@ -59,13 +59,16 @@ section {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     transition: var(--transition);
     text-decoration: none;
+    line-height: 24px;
 }
 
 .btn--white {
@@ -3593,7 +3596,7 @@ address::before {
     display: none;
 }
 
-.swiper-pagination {
+.swiper-6 .swiper-pagination {
     position: initial;
     margin-top: 25px;
 }
@@ -3690,4 +3693,40 @@ address::before {
     position: relative;
     z-index: 1;
     display: none;
+}
+
+.btn--android::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/btn-android.svg) center / contain no-repeat;
+}
+.btn--ios::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/btn-ios.svg) center / contain no-repeat;
+}
+.btn--web-traider::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/btn-web-traider.svg) center / contain no-repeat;
+}
+.btn--windows::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/btn-windows.svg) center / contain no-repeat;
+}
+.btn--mac::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/btn-mac.svg) center / contain no-repeat;
 }

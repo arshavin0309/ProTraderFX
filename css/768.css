@@ -70,12 +70,9 @@
         padding: 20px 15px 15px;
     }
 
-    .recommendations__box {
-        grid-template-columns: 1fr;
-    }
-
     .recommendations__left {
-        order: 1;
+        /* order: 1; */
+        display: none;
     }
 
     .for-what .container {

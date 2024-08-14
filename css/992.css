@@ -32,7 +32,7 @@
         height: 100vh;
         object-position: center bottom;
         top: auto;
-        bottom: 120px;
+        bottom: 100px;
         right: 20px;
     }
 
@@ -109,7 +109,7 @@
         width: 105px;
         height: 130px;
         left: 20px;
-        bottom: 195px;
+        bottom: 170px;
         top: auto;
         right: auto;
     }
@@ -346,6 +346,10 @@
 
     .basic-postulates__list {
         gap: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    .recommendations__box {
         grid-template-columns: 1fr;
     }
 }
