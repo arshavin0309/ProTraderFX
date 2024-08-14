@@ -46,9 +46,10 @@
     }
 
     .documents__box {
+        height: auto;
         gap: 35px;
         flex-direction: column;
-        height: auto;
+        align-items: start;
     }
 
     .contacts__submit-box {
@@ -79,6 +80,10 @@
 
     .news-content__copyright p.text1 {
         margin: 0;
+    }
+
+    .steps__item {
+        padding: 20px 15px;
     }
 
     .steps__item img {
@@ -217,5 +222,25 @@
     .assets__list--6::before {
         width: 180px;
         height: 200px;
+    }
+
+    .choice__item {
+        padding: 20px 15px;
+    }
+
+    .text1 {
+        line-height: 18px;
+    }
+
+    .faq h2 {
+        text-align: center;
+    }
+
+    .faq h2+p {
+        text-align: center;
+    }
+
+    .contacts__submit-box p {
+        font-size: 12px;
     }
 }

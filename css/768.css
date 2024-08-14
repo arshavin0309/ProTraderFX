@@ -156,4 +156,8 @@
     .assets__list {
         grid-template-columns: 1fr;
     }
+
+    .documents__box {
+        padding: 20px 15px;
+    }
 }
