@@ -34,6 +34,7 @@
     .btn {
         width: 100%;
         text-align: center;
+        justify-content: center;
     }
 
     .analitics__container {
