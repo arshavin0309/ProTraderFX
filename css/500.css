@@ -24,6 +24,7 @@
     }
 
     footer .menu {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -34,6 +35,8 @@
     .btn {
         width: 100%;
         text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -49,24 +52,35 @@
     .documents__box {
         height: auto;
         gap: 35px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: start;
     }
 
     .contacts__submit-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .contacts__box {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
     .advantages-and-disadvantages__list {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 15px;
     }
 
     .news-page__list {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -76,6 +90,9 @@
 
     .news-content__copyright {
         margin-top: 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -93,6 +110,9 @@
     }
 
     .trading-platform__buttons {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 10px;
     }
@@ -194,7 +214,7 @@
     .assets__list {
         padding: 0;
     }
-    
+
     .assets__list--1::before {
         width: 140px;
         height: 210px;

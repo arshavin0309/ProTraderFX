@@ -1,5 +1,6 @@
 @media (max-width: 1300px) {
     .acquaintance__list {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
         gap: 35px;
@@ -49,10 +50,13 @@
         content: '';
         top: -20px;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         width: calc(100% - 40%);
         height: calc(100% + 40px);
         background: var(--grey-dark);
-        filter: blur(15px);
+        -webkit-filter: blur(15px);
+                filter: blur(15px);
     }
 }

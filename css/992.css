@@ -1,5 +1,6 @@
 @media (max-width: 992px) {
     footer .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -22,7 +23,7 @@
         width: 100%;
         padding: 20px 15px;
     }
-    
+
     .assets__list--1::before {
         min-width: 140px;
         min-height: 210px;
@@ -30,6 +31,7 @@
         max-height: 380px;
         width: 100vw;
         height: 100vh;
+        -o-object-position: center bottom;
         object-position: center bottom;
         top: auto;
         bottom: 100px;
@@ -179,6 +181,8 @@
     }
 
     .cards__box {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         gap: 10px;
         padding-bottom: 5px;
@@ -239,6 +243,7 @@
     .contacts .container {
         padding-top: 20px;
         padding-bottom: 20px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -255,6 +260,7 @@
     }
 
     .contacts__box--mobile {
+        display: -ms-grid;
         display: grid;
         margin-bottom: 0;
     }
@@ -288,12 +294,15 @@
         position: absolute;
         right: 0;
         top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         width: 50px;
         height: 50px;
     }
 
     .news-page__container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -308,6 +317,7 @@
     .news-content__img {
         width: 100%;
         height: 300px;
+        -o-object-fit: cover;
         object-fit: cover;
     }
 
@@ -316,6 +326,7 @@
     }
 
     .choice__list {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -333,6 +344,7 @@
 
     .responsibility__content {
         height: auto;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -346,10 +358,12 @@
 
     .basic-postulates__list {
         gap: 15px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
     .recommendations__box {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 }

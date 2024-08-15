@@ -5,26 +5,34 @@
     }
 
     .btn-arrow-black:hover::before {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
     }
 
     .btn-arrow-white:hover::before {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
     }
 
     header .menu-item:hover a {
         background: var(--grey-dark);
     }
-    
+
     header .sub-menu .menu-item a {
         background: none;
     }
 
     header .sub-menu:hover {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
     header .menu-item:hover .sub-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -91,15 +99,15 @@
     .types__list .swiper-slide:nth-child(1) .types__item:hover {
         border: 2px solid var(--green-hover);
     }
-    
+
     .types__list .swiper-slide:nth-child(2) .types__item:hover {
         border: 2px solid var(--red-hover);
     }
-    
+
     .types__list .swiper-slide:nth-child(3) .types__item:hover {
         border: 2px solid var(--pink-hover);
     }
-    
+
     .types__list .swiper-slide:nth-child(4) .types__item:hover {
         border: 2px solid var(--blue-hover);
     }
@@ -107,15 +115,15 @@
     .acquaintance__item:nth-child(1):hover {
         border: 2px solid var(--green-hover);
     }
-    
+
     .acquaintance__item:nth-child(2):hover {
         border: 2px solid var(--red-hover);
     }
-    
+
     .acquaintance__item:nth-child(3):hover {
         border: 2px solid var(--pink-hover);
     }
-    
+
     .acquaintance__item:nth-child(4):hover {
         border: 2px solid var(--blue-hover);
     }
@@ -123,15 +131,15 @@
     .acquaintance__item:nth-child(1):hover p:before {
         background: var(--green-hover);
     }
-    
+
     .acquaintance__item:nth-child(2):hover p:before {
         background: var(--red-hover);
     }
-    
+
     .acquaintance__item:nth-child(3):hover p:before {
         background: var(--pink-hover);
     }
-    
+
     .acquaintance__item:nth-child(4):hover p:before {
         background: var(--blue-hover);
     }
@@ -159,7 +167,7 @@
     details summary:hover h3 {
         color: var(--color-hover);
     }
-    
+
     details summary:hover::before {
         background: url(../img/plus-hover.svg) var(--grey) center / 20px no-repeat;
     }
@@ -171,8 +179,10 @@
     .documents__item:hover {
         color: var(--color-hover);
     }
-    
+
     .documents__item:hover::after {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         background: url(../img/btn-arrow-black-hover.svg) var(--grey) center / 30px no-repeat;
     }
@@ -188,23 +198,23 @@
     .trading-advantages__item:nth-child(1):hover {
         border: 2px solid var(--green-hover);
     }
-    
+
     .trading-advantages__item:nth-child(1):hover h3::before {
         background: var(--green-hover);
     }
-    
+
     .trading-advantages__item:nth-child(2):hover {
         border: 2px solid var(--red-hover);
     }
-    
+
     .trading-advantages__item:nth-child(2):hover h3::before {
         background: var(--red-hover);
     }
-    
+
     .trading-advantages__item:nth-child(3):hover {
         border: 2px solid var(--blue-hover);
     }
-    
+
     .trading-advantages__item:nth-child(3):hover h3::before {
         background: var(--blue-hover);
     }
@@ -220,8 +230,10 @@
     .instruments__buy:hover {
         color: var(--black);
     }
-    
+
     .instruments__buy:hover::after {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
     }
 

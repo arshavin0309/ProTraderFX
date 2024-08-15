@@ -35,6 +35,8 @@
         height: 480px;
         margin-top: 0;
         padding-bottom: 85px;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: end;
     }
 
@@ -54,14 +56,9 @@
         background: url(../img/europe-mobile.png) right bottom / contain no-repeat;
     }
 
-    .banner-2 .banner__container::before {
-        /* background: url(../img/banner-2-left-mobile.png) left top / contain no-repeat; */
-    }
-
     .banner-2 .banner__container::after {
         top: auto;
         bottom: 0;
-        /* background: url(../img/banner-2-right-mobile.png) right bottom / contain no-repeat; */
     }
 
     .banner__content {
@@ -99,6 +96,7 @@
     }
 
     .documents .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -135,6 +133,8 @@
     .awards__item--5,
     .awards__item--6 {
         position: initial;
+        -webkit-transform: none;
+        -ms-transform: none;
         transform: none;
         margin: auto;
     }
@@ -159,30 +159,6 @@
         margin-top: 15px;
     }
 
-    /* .start__item:nth-child(1) {
-        background: url(../img/start-box-mobile-1.png) var(--grey) right center / contain no-repeat;
-    }
-
-    .start__item:nth-child(2) {
-        background: url(../img/start-box-mobile-2.png) var(--grey) right center / contain no-repeat;
-    }
-
-    .start__item:nth-child(3) {
-        background: url(../img/start-box-mobile-3.png) var(--grey) right center / contain no-repeat;
-    }
-
-    .start__item:nth-child(4) {
-        background: url(../img/start-box-mobile-4.png) var(--grey) right center / contain no-repeat;
-    }
-
-    .start__item:nth-child(5) {
-        background: url(../img/start-box-mobile-5.png) var(--grey) right center / contain no-repeat;
-    }
-
-    .start__item:nth-child(6) {
-        background: url(../img/start-box-mobile-6.png) var(--grey) right center / contain no-repeat;
-    } */
-
     .start__box {
         position: relative;
         max-width: 355px;
@@ -197,10 +173,12 @@
         width: calc(100% + 15px + 15px);
         height: calc(100% + 15px + 15px);
         background: var(--grey);
+        -webkit-filter: blur(50px);
         filter: blur(50px);
     }
 
     .assets__list {
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 
