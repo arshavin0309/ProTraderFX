@@ -51,7 +51,8 @@
     }
 
     header .menu.active .sub-menu .menu-item a {
-        padding-left: 45px;
+        /* padding-left: 45px; */
+        padding-left: 25px;
         border-bottom: 1px solid var(--grey);
         /* background: var(--grey-dark); */
     }

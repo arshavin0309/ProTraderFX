@@ -609,6 +609,7 @@ header .discription {
     width: 100%;
     margin-bottom: 30px;
     text-align: center;
+    justify-content: center;
 }
 
 .types__element {
@@ -1330,6 +1331,7 @@ header .discription {
 
 .news__content--hero .btn {
     margin-top: 50px;
+    justify-content: center;
     text-align: center;
 }
 
@@ -3594,6 +3596,8 @@ address::before {
 
 .swiper-5 .swiper-pagination {
     display: none;
+    position: initial;
+    margin-top: 25px;
 }
 
 .swiper-6 .swiper-pagination {
