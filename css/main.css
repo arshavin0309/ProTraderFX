@@ -1872,6 +1872,7 @@ footer .copyright {
     -webkit-transition: var(--transition);
     -o-transition: var(--transition);
     transition: var(--transition);
+    overflow: hidden;
 }
 
 .choice__item:nth-child(1) {
@@ -1994,6 +1995,62 @@ footer .copyright {
         opacity: 0;
         -webkit-transform: translateY(5%);
         transform: translateY(5%);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes content-2 {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(100vh);
+        transform: translateY(100vh);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@keyframes content-2 {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(100vh);
+        transform: translateY(100vh);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes content-3 {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-10vh);
+        transform: translateY(-10vh);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@keyframes content-3 {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-10vh);
+        transform: translateY(-10vh);
     }
 
     to {
@@ -4247,10 +4304,20 @@ address::before {
     justify-content: start;
 }
 
-.choice__item:hover h3,
+.choice__item:hover h3 {
+    -webkit-animation-name: content-3;
+    animation-name: content-3;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
 .choice__item:hover p {
-    -webkit-animation-name: content;
-    animation-name: content;
+    -webkit-animation-name: content-2;
+    animation-name: content-2;
     -webkit-animation-duration: .4s;
     animation-duration: .4s;
     -webkit-animation-iteration-count: 1;
